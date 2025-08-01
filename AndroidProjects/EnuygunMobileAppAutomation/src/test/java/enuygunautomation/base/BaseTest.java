@@ -12,7 +12,7 @@ public class BaseTest extends Defines {
     @BeforeTest
     public void setUpTest(){
         try {
-            options = new UiAutomator2Options()
+            androidOptions = new UiAutomator2Options()
                     .setPlatformName("Android")
                     .setAutomationName("UiAutomator2")
                     .setAppPackage("com.mobilatolye.android.enuygun")
@@ -20,9 +20,8 @@ public class BaseTest extends Defines {
                     .setAppActivity("com.mobilatolye.android.enuygun.features.application.MainActivity")
                     .setSkipUnlock(true)
                     .setNoReset(false);
-            driver = new AndroidDriver(
-                    new URI("http://127.0.0.1:4723").toURL(), options);
-
+            androidDriver = new AndroidDriver(
+                    new URI("http://127.0.0.1:4723").toURL(), androidOptions);
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -30,6 +29,6 @@ public class BaseTest extends Defines {
     @AfterTest
     public void tearDown(){
         logger.info("Test sonlandı.");
-        driver.quit();
+        androidDriver.quit();
     }
 }
