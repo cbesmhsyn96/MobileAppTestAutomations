@@ -1,17 +1,11 @@
-package enuygunautomation;
+package enuygunautomation.tests;
 import enuygunautomation.helper.WaitHelper;
 import org.openqa.selenium.WebElement;
 
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
-
-import java.net.URI;
-import java.net.URL;
-import java.time.Duration;
-
-public class LoginTest extends WaitHelper {
-
+public class MainPage extends WaitHelper {
     /*Enuygun App açıldığında ilk görünen slide kontrol edilir
     Tüm seyahatin tek uygulamada,Biletim güvende,İlk bilen sen ol yazıları ve resimleri kontrol edilir.*/
     @Test
@@ -22,6 +16,5 @@ public class LoginTest extends WaitHelper {
         logger.info("Açılış yazısının '"+element.getText()+"' olduğu doğrulandı.");
         waitAsImplicitly(10);
     }
-
 
 }

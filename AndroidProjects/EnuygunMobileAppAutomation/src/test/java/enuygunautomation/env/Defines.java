@@ -1,16 +1,11 @@
 package enuygunautomation.env;
 
-import enuygunautomation.LoginTest;
-import enuygunautomation.helper.SwitchByLocatorElement;
+import enuygunautomation.tests.LoginTest;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.ios.options.XCUITestOptions;
 import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Optional;
 
 public class Defines {
     protected static Logger logger = LoggerFactory.getLogger(LoginTest.class);
