@@ -15,20 +15,18 @@ import java.util.List;
 import java.util.Objects;
 
 public class Defines {
-    protected static Logger logger = null;
-    protected static AndroidDriver androidDriver = null;
-    protected static UiAutomator2Options androidOptions = null;
+    protected static Logger logger;
+    protected static AndroidDriver androidDriver;
+    protected static UiAutomator2Options androidOptions;
     protected static final List<File> fileList = List.of(Objects.requireNonNull(new File("src/test/resources/locators").listFiles()));
     protected static ObjectMapper objectMapper = new ObjectMapper();
-    protected static String searchedKey = "MainPageIntroTitle";
-    protected static WebDriverWait wait = null;
+    protected static WebDriverWait wait;
     protected static HashSet<Runnable> smokeTests = new HashSet<>();
     protected static HashSet<Runnable> regressionTests = new HashSet<>();
 
-    /*protected static XCUITestOptions iosOptions = null;
-    protected static IOSDriver iosDriver = null;*/
+    /*protected static XCUITestOptions iosOptions
+    protected static IOSDriver iosDriver*/
 
-    //null atamamın sebebi NullPointerException almamamak
     //NullPointerException riskini azaltmak için Optional yardımcı sınıfı da iş görür.
     //Optional<UiAutomator2Options> optionsAndroid ile de yapabilirdim. null atamazdım.
     //örneğin optionsAndroid kullanırken optional metotları ile devam edilirdi.
