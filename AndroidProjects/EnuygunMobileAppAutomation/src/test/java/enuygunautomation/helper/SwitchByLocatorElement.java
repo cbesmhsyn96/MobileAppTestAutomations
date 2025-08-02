@@ -2,6 +2,7 @@ package enuygunautomation.helper;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import helper.DeserialLocatorFiles;
+import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -9,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 
 public class SwitchByLocatorElement extends WaitHelper {
     /*
@@ -55,16 +57,25 @@ public class SwitchByLocatorElement extends WaitHelper {
         switch (type){
             case "id": return By.id(value);
             case "xpath": return By.xpath(value);
+            case "class": return By.className(value);
+            case "accessibilityId": return AppiumBy.accessibilityId(value);
+            case "androidUIautomator": return AppiumBy.androidUIAutomator(value);
             /*
-            resource-id, class... ihtiyaç durumunda eklenebilir.
+            eklenebilir
              */
         }
         return null;
     }
 
     protected static WebElement findElementByKey(String searchedKey) throws IOException {
-        By by = getBy(Objects.requireNonNull(getFoundedFileContainsKey(searchedKey)));
-        WebElement webElement =  androidDriver.findElement(by);
-        return webElement;
+        By by;
+        Optional<By> byOptional = Optional.ofNullable(getBy(Objects.requireNonNull(getFoundedFileContainsKey(searchedKey))));
+        if(byOptional.isPresent()){
+            by = byOptional.get();
+            return androidDriver.findElement(by);
+        }else{
+            logger.info("{\"key\" : \""+searchedKey+"\""+" bulunamadı.");
+        }
+        return null;
     }
 }

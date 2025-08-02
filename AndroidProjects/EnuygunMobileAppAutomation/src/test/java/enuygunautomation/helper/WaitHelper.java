@@ -10,5 +10,6 @@ public class WaitHelper extends BaseTest {
         androidDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
+
     //protected static WebDriverWait waitAsExplicit
 }
