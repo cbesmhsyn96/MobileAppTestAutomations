@@ -1,12 +1,7 @@
 package enuygunautomation.tests;
-import enuygunautomation.env.Defines;
-import enuygunautomation.helper.ITestExecution;
-import enuygunautomation.helper.SwitchByLocatorElement;
-import enuygunautomation.helper.WaitHelper;
-import org.openqa.selenium.WebElement;
+import enuygunautomation.helper.*;
 
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
 import java.io.IOException;

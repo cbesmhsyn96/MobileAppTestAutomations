@@ -1,4 +1,4 @@
-package helper;
+package enuygunautomation.helper;
 
 public class DeserialLocatorFiles {
     private String key;

@@ -3,16 +3,10 @@ package enuygunautomation.env;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
-import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.File;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Defines {
     protected static Logger logger;
@@ -28,7 +22,7 @@ public class Defines {
     protected static IOSDriver iosDriver*/
 
     //NullPointerException riskini azaltmak için Optional yardımcı sınıfı iş görür.
-    //Optional<UiAutomator2Options> optionsAndroid ile de yapabilirdim. null atamazdım.
+    //Optional<UiAutomator2Options> optionsAndroid ile de yapabilirdim.
     //örneğin optionsAndroid kullanırken optional metotları ile devam edilirdi.
 
     /*

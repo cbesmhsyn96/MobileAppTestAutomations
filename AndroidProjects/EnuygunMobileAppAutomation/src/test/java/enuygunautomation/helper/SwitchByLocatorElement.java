@@ -1,18 +1,11 @@
 package enuygunautomation.helper;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ser.Serializers;
 import enuygunautomation.base.BaseTest;
-import helper.DeserialLocatorFiles;
 import io.appium.java_client.AppiumBy;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import org.openqa.selenium.*;
+import java.io.*;
+import java.util.*;
 
 public class SwitchByLocatorElement extends BaseTest {
     /*

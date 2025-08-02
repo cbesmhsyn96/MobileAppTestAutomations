@@ -1,13 +1,9 @@
 package enuygunautomation.helper;
+import org.testng.annotations.*;
 
-import enuygunautomation.tests.MainPage;
-import org.junit.jupiter.api.Disabled;
-import org.testng.annotations.Test;
+import java.io.*;
 
-import java.io.IOException;
-
-import static enuygunautomation.helper.PrepareTestPages.mainPage;
-import static enuygunautomation.helper.PrepareTestPages.prepareAllPagesTests;
+import static enuygunautomation.helper.PrepareTestPages.*;
 
 public class TestExecutionManager extends WaitHelper{
     @Test

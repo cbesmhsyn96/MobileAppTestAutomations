@@ -1,6 +1,6 @@
 package enuygunautomation.helper;
 
-import enuygunautomation.tests.MainPage;
+import enuygunautomation.tests.*;
 
 public class PrepareTestPages {
     protected static MainPage mainPage;
