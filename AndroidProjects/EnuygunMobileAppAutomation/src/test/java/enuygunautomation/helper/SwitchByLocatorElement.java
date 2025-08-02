@@ -1,6 +1,8 @@
 package enuygunautomation.helper;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ser.Serializers;
+import enuygunautomation.base.BaseTest;
 import helper.DeserialLocatorFiles;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.By;
@@ -12,7 +14,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-public class SwitchByLocatorElement extends WaitHelper {
+public class SwitchByLocatorElement extends BaseTest {
     /*
     Burada xpath, id, class gibi attributelar için By döndüren metot yazılıp
     dönen By ı androidDriver.findElement(dönenBy) şeklinde WebElement döndüren bir
@@ -29,7 +31,7 @@ public class SwitchByLocatorElement extends WaitHelper {
     Ben burada Jackson-databind kullanacağım.
      */
 
-    private static DeserialLocatorFiles getFoundedFileContainsKey(String searchedKey) throws IOException {
+    protected static DeserialLocatorFiles getFoundedFileContainsKey(String searchedKey) throws IOException {
         for (File currentLocation:fileList){
             if(currentLocation.isDirectory()){
                 File[] currentFiles = Objects.requireNonNull(currentLocation.listFiles());
@@ -51,7 +53,7 @@ public class SwitchByLocatorElement extends WaitHelper {
         return null;
     }
 
-    private static By getBy(DeserialLocatorFiles deserialLocatorFiles){
+    protected static By getBy(DeserialLocatorFiles deserialLocatorFiles){
         String value = deserialLocatorFiles.getValue();
         String type = deserialLocatorFiles.getType();
         switch (type){
