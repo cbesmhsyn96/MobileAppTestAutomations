@@ -27,7 +27,7 @@ public class Defines {
     /*protected static XCUITestOptions iosOptions
     protected static IOSDriver iosDriver*/
 
-    //NullPointerException riskini azaltmak için Optional yardımcı sınıfı da iş görür.
+    //NullPointerException riskini azaltmak için Optional yardımcı sınıfı iş görür.
     //Optional<UiAutomator2Options> optionsAndroid ile de yapabilirdim. null atamazdım.
     //örneğin optionsAndroid kullanırken optional metotları ile devam edilirdi.
 
