@@ -1,16 +1,24 @@
 package enuygunautomation.env;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+import java.util.List;
+import java.util.Objects;
+
 public class Defines {
     protected static Logger logger = null;
     protected static By testContext = By.id("com.mobilatolye.android.enuygun:id/text_fourthIntro_title");
     protected static AndroidDriver androidDriver = null;
     protected static UiAutomator2Options androidOptions = null;
+    protected static final List<File> fileList = List.of(Objects.requireNonNull(new File("src/test/resources/locators").listFiles()));
+    protected static ObjectMapper objectMapper = new ObjectMapper();
+    protected static String searchedKey = "MainPageIntroTitle";
     /*protected static XCUITestOptions iosOptions = null;
     protected static IOSDriver iosDriver = null;*/
 
