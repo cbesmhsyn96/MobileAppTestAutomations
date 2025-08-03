@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 import org.slf4j.LoggerFactory;
-import org.testng.asserts.Assertion;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -96,18 +95,23 @@ public class MainPage extends WaitHelper implements ITestExecute {
         logger.info("Enuygun’un özel kampanyalarından ve... yazısı görüldü.");
 
         //Bildirimlere izin ver butonu kontrol
-        //Daha sonra hatırlat linki kontrol
+        assertion.assertTrue(waitedElementUntilVisible(findElementByKey("MainPageSlideThirdAllowNBtn")).isDisplayed());
+        logger.info("Bildirimlere izin ver butonu görüldü.");
 
+        //Daha sonra hatırlat butonu kontrol
+        assertion.assertTrue(waitedElementUntilVisible(findElementByKey("MainPageSlideThirdRemindMeLaterBtn")).isDisplayed());
+        logger.info("Daha sonra hatırlat butonu görüldü.");
+
+        assertion.assertTrue(waitedElementUntilVisible(findElementByKey("MainPageSlideThirdCloseBtn")).isDisplayed());
+        logger.info("Slide Close butonu görüldü.");
     }
+
     /*Enuygun App açıldığında ilk görünen slide kontrol edilir
     Tüm seyahatin tek uygulamada,Biletim güvende,İlk bilen sen ol yazıları ve resimleri kontrol edilir.*/
-
     private void firstSlideControll() throws IOException {
         tumSeyahatinTekUygulamadaControl();
         biletimGuvendeControll();
         ilkBilenSenOlControll();
-
-
     }
 
 

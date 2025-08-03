@@ -50,19 +50,19 @@
     "type": "id"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "MainPageSlideThirdAllowNBtn",
+    "value": "com.mobilatolye.android.enuygun:id/btnAllowNotification",
+    "type": "id"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "MainPageSlideThirdRemindMeLaterBtn",
+    "value": "com.mobilatolye.android.enuygun:id/btnRemindMeLater",
+    "type": "id"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "MainPageSlideThirdCloseBtn",
+    "value": "com.mobilatolye.android.enuygun:id/btnClose",
+    "type": "id"
   },
   {
     "key": "",
