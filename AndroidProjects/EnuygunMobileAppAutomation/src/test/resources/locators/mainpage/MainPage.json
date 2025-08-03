@@ -5,13 +5,48 @@
     "type": ""
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "MainPageSlideIntroImage",
+    "value": "com.mobilatolye.android.enuygun:id/lottie_animation_view",
+    "type": "id"
   },
   {
-    "key": "MainPageIntroTitle",
+    "key": "MainPageSlideIntroTitle",
     "value": "com.mobilatolye.android.enuygun:id/text_fourthIntro_title",
+    "type": "id"
+  },
+  {
+    "key": "MainPageSlideIntroText",
+    "value": "com.mobilatolye.android.enuygun:id/text_fourthIntro_content",
+    "type": "id"
+  },
+  {
+    "key": "MainPageSlideSecondTitle",
+    "value": "com.mobilatolye.android.enuygun:id/text_fourthIntro_title",
+    "type": "id"
+  },
+  {
+    "key": "MainPageSlideSecondImage",
+    "value": "com.mobilatolye.android.enuygun:id/lottie_animation_view",
+    "type": "id"
+  },
+  {
+    "key": "MainPageSlideSecondText",
+    "value": "com.mobilatolye.android.enuygun:id/text_fourthIntro_content",
+    "type": "id"
+  },
+  {
+    "key": "MainPageSlideThirdImage",
+    "value": "com.mobilatolye.android.enuygun:id/lottie_animation_view",
+    "type": "id"
+  },
+  {
+    "key": "MainPageSlideThirdTitle",
+    "value": "//android.widget.TextView[@resource-id='com.mobilatolye.android.enuygun:id/text_fourthIntro_title' and @text='İlk bilen sen ol!']",
+    "type": "xpath"
+  },
+  {
+    "key": "MainPageSlideThirdText",
+    "value": "com.mobilatolye.android.enuygun:id/text_fourthIntro_content",
     "type": "id"
   },
   {
@@ -23,5 +58,16 @@
     "key": "",
     "value": "",
     "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
   }
+
 ]

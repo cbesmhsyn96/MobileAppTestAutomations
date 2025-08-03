@@ -5,6 +5,8 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
+import org.testng.asserts.Assertion;
+
 import java.io.File;
 import java.util.*;
 
@@ -17,6 +19,7 @@ public class Defines {
     protected static WebDriverWait wait;
     protected static HashSet<Runnable> smokeTests = new HashSet<>();
     protected static HashSet<Runnable> regressionTests = new HashSet<>();
+    protected static Assertion assertion = new Assertion();
 
     /*protected static XCUITestOptions iosOptions
     protected static IOSDriver iosDriver*/

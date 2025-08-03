@@ -8,9 +8,9 @@ import static enuygunautomation.helper.PrepareTestPages.*;
 public class TestExecutionManager extends WaitHelper{
     @Test
     //@Disabled
-    public void allPagesTestExecution() throws IOException {
+    public void allPagestestExecute() throws IOException {
         prepareAllPagesTests();
-        mainPage.testExecution();
+        mainPage.testExecute();
     }
 
 

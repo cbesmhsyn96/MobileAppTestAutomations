@@ -2,7 +2,11 @@
 <Configuration status="WARN">
     <Appenders>
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%m Tarih: %d{yyyy-MM-dd HH:mm:ss} %-5p [%c{1}.java]%n"/>
+            <PatternLayout>
+                <Pattern>
+                    %highlight{%-60m %d{yyyy-MM-dd HH:mm:ss} %-5p [%c{1}.java]%n}{FATAL=red blink, ERROR=red, WARN=yellow, INFO=green, DEBUG=blue}
+                </Pattern>
+            </PatternLayout>
         </Console>
     </Appenders>
     <Loggers>
