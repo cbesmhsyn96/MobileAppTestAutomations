@@ -108,7 +108,7 @@ public class MainPage extends WaitHelper implements ITestExecute {
 
     /*Enuygun App açıldığında ilk görünen slide kontrol edilir
     Tüm seyahatin tek uygulamada,Biletim güvende,İlk bilen sen ol yazıları ve resimleri kontrol edilir.*/
-    private void firstSlideControll() throws IOException {
+    private void scenariofirstSlideControll() throws IOException {
         tumSeyahatinTekUygulamadaControl();
         biletimGuvendeControll();
         ilkBilenSenOlControll();
@@ -120,6 +120,6 @@ public class MainPage extends WaitHelper implements ITestExecute {
         logger = LoggerFactory.getLogger(MainPage.class);
         //Buraya tüm Main Page senaryolarının metotları eklenecek.
         //Daha sonra TestManagement ile koşum yapılacak.
-        firstSlideControll();
+        scenariofirstSlideControll();
     }
 }
