@@ -65,9 +65,13 @@
     "type": "id"
   },
   {
-    "key": "",
-    "value": "",
-    "type": ""
+    "key": "MainPageSlideThirdAllowNotifBtn",
+    "value": "com.mobilatolye.android.enuygun:id/btnAllowNotification",
+    "type": "id"
+  },
+  {
+    "key": "MainPageSlideThirdRemindMeBtn",
+    "value": "com.mobilatolye.android.enuygun:id/btnRemindMeLater",
+    "type": "id"
   }
-
 ]

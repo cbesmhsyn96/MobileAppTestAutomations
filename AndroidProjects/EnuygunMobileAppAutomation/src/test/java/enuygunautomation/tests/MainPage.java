@@ -1,6 +1,7 @@
 package enuygunautomation.tests;
 import enuygunautomation.helper.*;
 
+import jdk.jfr.Description;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.PointerInput;
@@ -13,7 +14,42 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class MainPage extends WaitHelper implements ITestExecute {
+public class MainPage extends WaitHelper{
+
+    public MainPage() {
+        logger =  LoggerFactory.getLogger(MainPage.class);
+    }
+
+    private void swipeToBiletimGuvende(){
+        final var finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+        var start = new Point(903, 739);
+        var end = new Point(136, 716);
+        var swipe = new Sequence(finger, 1);
+        swipe.addAction(finger.createPointerMove(Duration.ofMillis(0),
+                PointerInput.Origin.viewport(), start.getX(), start.getY()));
+        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+        swipe.addAction(finger.createPointerMove(Duration.ofMillis(1000),
+                PointerInput.Origin.viewport(), end.getX(), end.getY()));
+        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+        androidDriver.perform(Arrays.asList(swipe));
+        logger.info("Biletim güvende alanına kaydırıldı.");
+    }
+
+    private void swipeToIlkBilenSenOl(){
+        //İlk bilen sen ol alanına kaydırma işlemi
+        final var finger2 = new PointerInput(PointerInput.Kind.TOUCH, "finger2");
+        var start2 = new Point(961, 840);
+        var end2 = new Point (101, 840);
+        var swipe2 = new Sequence(finger2, 1);
+        swipe2.addAction(finger2.createPointerMove(Duration.ofMillis(0),
+                PointerInput.Origin.viewport(), start2.getX(), start2.getY()));
+        swipe2.addAction(finger2.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+        swipe2.addAction(finger2.createPointerMove(Duration.ofMillis(1000),
+                PointerInput.Origin.viewport(), end2.getX(), end2.getY()));
+        swipe2.addAction(finger2.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+        androidDriver.perform(Arrays.asList(swipe2));
+        logger.info("İlk bilen sen ol alanına kaydırıldı.");
+    }
 
     private void tumSeyahatinTekUygulamadaControl() throws IOException {
         //Tüm seyahatin tek uygulamada
@@ -35,18 +71,7 @@ public class MainPage extends WaitHelper implements ITestExecute {
         assertion.assertEquals(waitedElementUntilVisible(findElementByKey("MainPageSlideIntroText")).getText(),"Uçak bileti, otobüs bileti, otel, araç kiralama ve transfer hepsi aynı uygulamada!");
         logger.info("Uçak bileti, otobüs bileti, otel,... yazısı görüldü.");
         //Biletim güvende alanına kaydırma işlemi
-        final var finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
-        var start = new Point(903, 739);
-        var end = new Point(136, 716);
-        var swipe = new Sequence(finger, 1);
-        swipe.addAction(finger.createPointerMove(Duration.ofMillis(0),
-                PointerInput.Origin.viewport(), start.getX(), start.getY()));
-        swipe.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
-        swipe.addAction(finger.createPointerMove(Duration.ofMillis(1000),
-                PointerInput.Origin.viewport(), end.getX(), end.getY()));
-        swipe.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
-        androidDriver.perform(Arrays.asList(swipe));
-        logger.info("Biletim güvende alanına kaydırıldı.");
+        swipeToBiletimGuvende();
     }
 
     private void biletimGuvendeControll() throws IOException {
@@ -65,18 +90,7 @@ public class MainPage extends WaitHelper implements ITestExecute {
         logger.info("Uçuşa 3 saate kadar ki bilet iptallerinde... yazısı görüldü.");
 
         //İlk bilen sen ol alanına kaydırma işlemi
-        final var finger2 = new PointerInput(PointerInput.Kind.TOUCH, "finger2");
-        var start2 = new Point(961, 840);
-        var end2 = new Point (101, 840);
-        var swipe2 = new Sequence(finger2, 1);
-        swipe2.addAction(finger2.createPointerMove(Duration.ofMillis(0),
-                PointerInput.Origin.viewport(), start2.getX(), start2.getY()));
-        swipe2.addAction(finger2.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
-        swipe2.addAction(finger2.createPointerMove(Duration.ofMillis(1000),
-                PointerInput.Origin.viewport(), end2.getX(), end2.getY()));
-        swipe2.addAction(finger2.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
-        androidDriver.perform(Arrays.asList(swipe2));
-        logger.info("İlk bilen sen ol alanına kaydırıldı.");
+        swipeToIlkBilenSenOl();
     }
 
     private void ilkBilenSenOlControll() throws IOException {
@@ -107,21 +121,43 @@ public class MainPage extends WaitHelper implements ITestExecute {
         logger.info("Slide Close butonu görüldü.");
     }
 
-    /*Enuygun App açıldığında ilk görünen slide kontrol edilir
-    Tüm seyahatin tek uygulamada,Biletim güvende,İlk bilen sen ol yazıları ve resimleri kontrol edilir.*/
     @Test
+    @Description("Uygulama Açılışında Gelen Slide Bileşenlerinin Görünürlüğünün Kontrolü")
     private void scenariofirstSlideControll() throws IOException {
         tumSeyahatinTekUygulamadaControl();
         biletimGuvendeControll();
         ilkBilenSenOlControll();
     }
 
-
-    @Override
-    public void testExecute() throws IOException {
-        logger = LoggerFactory.getLogger(MainPage.class);
-        //Buraya tüm Main Page senaryolarının metotları eklenecek.
-        //Daha sonra TestManagement ile koşum yapılacak.
-        scenariofirstSlideControll();
+    @Test
+    @Description("Uygulama Açılışında Son Slide' daki 'Bildirimlere izin ver' Butonu Yönlendirme Kontrolü")
+    private void allowNotificationButtonAction() throws IOException {
+        swipeToBiletimGuvende();
+        swipeToIlkBilenSenOl();
+        waitedElementUntilClickable(findElementByKey("MainPageSlideThirdAllowNotifBtn")).click();
+        logger.info("Bildirimlere izin ver butonuna tıklandı.");
+        /*
+        Yönlendirme kontrolü
+        Login ekranı açıldığını kontrol
+         */
     }
+
+    @Test
+    @Description("Uygulama Açılında Son Slide' daki 'Daha sonra hatırlat' Butonu Yönlendirme Kontrolü")
+    private void remindMeLaterButtonAction() throws IOException {
+        swipeToBiletimGuvende();
+        swipeToIlkBilenSenOl();
+        waitedElementUntilClickable(findElementByKey("MainPageSlideThirdRemindMeBtn")).click();
+        logger.info("Daha sonra hatırlat butonuna tıklandı.");
+        /*
+        Yönlendirme kontrolü
+        Login ekranı açıldığını kontrol
+         */
+    }
+
+
+
+
+
+
 }
