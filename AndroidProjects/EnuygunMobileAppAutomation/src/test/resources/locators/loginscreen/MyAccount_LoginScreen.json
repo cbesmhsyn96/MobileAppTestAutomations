@@ -1,0 +1,89 @@
+[
+  {
+    "key": "MyAccount_LoginSubmitBtn",
+    "value": "com.mobilatolye.android.enuygun:id/txtContinue",
+    "type": "id"
+  },
+  {
+    "key": "MyAccount_SignUpBtn",
+    "value": "new UiSelector().text(\"Üye ol\")",
+    "type": "androiduiautomator"
+  },
+  {
+    "key": "MyAccount_LoginBtn",
+    "value": "new UiSelector().text(\"Giriş yap\")",
+    "type": "androiduiautomator"
+  },
+  {
+    "key": "MyAccount_LoginEmailInput",
+    "value": "com.mobilatolye.android.enuygun:id/price_alarm_email_input",
+    "type": "id"
+  },
+  {
+    "key": "MyAccount_PasswordInput",
+    "value": "com.mobilatolye.android.enuygun:id/edtPassword",
+    "type": "id",
+    "----extarnal_note----": "SignUp' da aynı locator kullanılıyor."
+  },
+  {
+    "key": "MyAccount_PasswordHidder",
+    "value": "com.mobilatolye.android.enuygun:id/imageview_password_hint",
+    "type": "id",
+    "----extarnal_note----": "SignUp' da aynı locator kullanılıyor."
+  },
+  {
+    "key": "MyAccount_LoginUyeOlmadanDevamEtBtn",
+    "value": "com.mobilatolye.android.enuygun:id/txtNotNow",
+    "type": "id"
+  },
+  {
+    "key": "MyAccount_LoginIForgotPasswordBtn",
+    "value": "com.mobilatolye.android.enuygun:id/txtForgotPassword",
+    "type": "id"
+  },
+  {
+    "key": "MyAccount_LoginContinueWithFaceBook",
+    "value": "com.mobilatolye.android.enuygun:id/price_alarm_login_facebook",
+    "type": "id"
+  },
+  {
+    "key": "MyAccount_LoginContinueWithGoogle",
+    "value": "com.mobilatolye.android.enuygun:id/price_alarm_login_google",
+    "type": "id"
+  },
+  {
+    "key": "MyAccount_LoginWithFace_FaceIcon",
+    "value": "//android.widget.TextView[@text=\"Facebook from Meta\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "MyAccount_LoginWithFace_EmailInput",
+    "value": "m_login_email",
+    "type": "id"
+  },
+  {
+    "key": "MyAccount_LoginWithFace_PasswordInput",
+    "value": "m_login_password",
+    "type": "id"
+  },
+  {
+    "key": "MyAccount_LoginWithFace_LoginBtn",
+    "value": "//android.widget.Button[@text=\"Log in\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "MyAccount_LoginWithGoogle_AppIcon",
+    "value": "com.google.android.gms:id/app_icon",
+    "type": "id"
+  },
+  {
+    "key": "MyAccount_LoginWithGoogle_AccountOptFirst",
+    "value": "(//android.widget.LinearLayout[@resource-id=\"com.google.android.gms:id/container\"])[1]/android.widget.LinearLayout",
+    "type": "xpath"
+  },
+  {
+    "key": "MyAccount_AppNameLogo",
+    "value": "com.mobilatolye.android.enuygun:id/imgLogo",
+    "type": "id"
+  }
+]

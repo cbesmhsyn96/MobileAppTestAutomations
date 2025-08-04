@@ -14,10 +14,10 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Objects;
 
-public class MainPage extends WaitHelper{
+public class MainScreen extends WaitHelper{
 
-    public MainPage() {
-        logger =  LoggerFactory.getLogger(MainPage.class);
+    public MainScreen() {
+        logger =  LoggerFactory.getLogger(MainScreen.class);
     }
 
     private void swipeToBiletimGuvende(){

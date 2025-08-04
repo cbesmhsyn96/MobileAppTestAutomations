@@ -53,8 +53,8 @@ public class SwitchByLocatorElement extends BaseTest {
             case "id": return By.id(value);
             case "xpath": return By.xpath(value);
             case "class": return By.className(value);
-            case "accessibilityId": return AppiumBy.accessibilityId(value);
-            case "androidUIautomator": return AppiumBy.androidUIAutomator(value);
+            case "accessibilityid": return AppiumBy.accessibilityId(value);
+            case "androiduiautomator": return AppiumBy.androidUIAutomator(value);
             /*
             eklenebilir
              */
