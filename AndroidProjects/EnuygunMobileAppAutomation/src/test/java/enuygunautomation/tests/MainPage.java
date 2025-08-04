@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 import org.slf4j.LoggerFactory;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -108,6 +109,7 @@ public class MainPage extends WaitHelper implements ITestExecute {
 
     /*Enuygun App açıldığında ilk görünen slide kontrol edilir
     Tüm seyahatin tek uygulamada,Biletim güvende,İlk bilen sen ol yazıları ve resimleri kontrol edilir.*/
+    @Test
     private void scenariofirstSlideControll() throws IOException {
         tumSeyahatinTekUygulamadaControl();
         biletimGuvendeControll();
