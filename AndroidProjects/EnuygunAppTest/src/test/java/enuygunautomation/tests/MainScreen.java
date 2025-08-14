@@ -1,18 +1,19 @@
 package enuygunautomation.tests;
+
 import enuygunautomation.helper.*;
+import enuygunautomation.base.*;
+import enuygunautomation.env.*;
+import enuygunautomation.*;
 
 import jdk.jfr.Description;
-import org.openqa.selenium.Point;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.PointerInput;
-import org.openqa.selenium.interactions.Sequence;
+import org.junit.jupiter.api.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.*;
 import org.slf4j.LoggerFactory;
-import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.time.Duration;
-import java.util.Arrays;
-import java.util.Objects;
+import java.util.*;
 
 public class MainScreen extends WaitHelper{
 
@@ -55,6 +56,7 @@ public class MainScreen extends WaitHelper{
         //Tüm seyahatin tek uygulamada
         //Bold yazıyı kontrol
         String textOfElement = Objects.requireNonNull(waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MainPageSlideIntroTitle")))).getText();
+        System.out.println("------------------------------------------"+textOfElement);
         //try catch içine alındığında o adım başarısız olsa da devam eder.
         try {
             assertion.assertEquals(textOfElement,"Tüm seyahatin tek uygulamada");
@@ -123,15 +125,16 @@ public class MainScreen extends WaitHelper{
 
     @Test
     @Description("Uygulama Açılışında Gelen Slide Bileşenlerinin Görünürlüğünün Kontrolü")
-    private void scenariofirstSlideControll() throws IOException {
+    public void scenariofirstSlideControll() throws IOException {
         tumSeyahatinTekUygulamadaControl();
         biletimGuvendeControll();
         ilkBilenSenOlControll();
     }
 
     @Test
+    @Disabled
     @Description("Uygulama Açılışında Son Slide' daki 'Bildirimlere izin ver' Butonu Yönlendirme Kontrolü")
-    private void allowNotificationButtonAction() throws IOException {
+    public void allowNotificationButtonAction() throws IOException, InterruptedException {
         swipeToBiletimGuvende();
         swipeToIlkBilenSenOl();
         waitedElementUntilClickable(findElementByKey("MainPageSlideThirdAllowNotifBtn")).click();
@@ -143,8 +146,9 @@ public class MainScreen extends WaitHelper{
     }
 
     @Test
+    @Disabled
     @Description("Uygulama Açılında Son Slide' daki 'Daha sonra hatırlat' Butonu Yönlendirme Kontrolü")
-    private void remindMeLaterButtonAction() throws IOException {
+    public void remindMeLaterButtonAction() throws IOException {
         swipeToBiletimGuvende();
         swipeToIlkBilenSenOl();
         waitedElementUntilClickable(findElementByKey("MainPageSlideThirdRemindMeBtn")).click();

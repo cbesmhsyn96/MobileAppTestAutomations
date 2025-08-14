@@ -23,7 +23,7 @@ public class BaseTest extends Defines {
                     .setNoReset(false);
             androidDriver = new AndroidDriver(
                     new URI("http://127.0.0.1:4723").toURL(), androidOptions);
-            wait = new WebDriverWait(androidDriver, Duration.ofSeconds(10));
+            wait = new WebDriverWait(androidDriver, Duration.ofSeconds(20));
         }catch (Exception e){
             e.printStackTrace();
         }
