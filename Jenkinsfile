@@ -22,15 +22,21 @@ pipeline {
         stage('Start Emulator') {
             steps {
                 sh """
-                  echo "Starting Android Emulator..."
-                  $ANDROID_HOME/emulator/emulator -avd Pixel_4 -no-window -no-audio &
-                  adb wait-for-device
-                  adb devices
-                  echo "Waiting for emulator to fully boot..."
-                  sleep 30
+                echo "Starting Android Emulator..."
+                $ANDROID_HOME/emulator/emulator -avd Pixel_4 -no-window -no-audio &
+                adb wait-for-device
+                adb devices
+                echo "Waiting for emulator to fully boot..."
+                boot_completed=""
+                until [ "\$boot_completed" -eq 1 ]; do
+                    boot_completed=\$(adb shell getprop sys.boot_completed 2>/dev/null || echo 0)
+                    sleep 5
+                done
+                echo "Emulator fully booted!"
                 """
             }
         }
+
 
         stage('Start Appium') {
             steps {
