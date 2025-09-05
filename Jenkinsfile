@@ -4,6 +4,7 @@ pipeline {
     tools {
         maven 'Maven 3.9.3'
         jdk 'JDK22'
+        allure 'Allure'
     }
 
     environment {
@@ -54,7 +55,8 @@ pipeline {
                 dir('AndroidProjects/EnuygunAppTest') {
                     allure([
                         includeProperties: false,
-                        results: [[path: 'target/allure-results']]
+                        results: [[path: 'target/allure-results']],
+                        reportBuildPolicy: 'ALWAYS'
                     ])
                 }
             }
