@@ -44,7 +44,7 @@ pipeline {
         stage('Start Appium') {
             steps {
                 sh """
-                export PATH=/opt/homebrew/bin:\$PATH
+                APPIUM_EXEC=/opt/homebrew/bin/appium
 
                 pids=\$(lsof -ti :${APPIUM_PORT})
                 if [ -n "\$pids" ]; then
@@ -53,13 +53,14 @@ pipeline {
                 fi
 
                 echo "Starting Appium server..."
-                nohup appium --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
+                nohup \$APPIUM_EXEC --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
                 APPIUM_PID=\$!
                 echo "Appium server started with PID \$APPIUM_PID on port ${APPIUM_PORT}"
                 sleep 10
                 """
             }
         }
+
 
         stage('Build & Test') {
             steps {
