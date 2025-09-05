@@ -42,24 +42,25 @@ pipeline {
         }
 
         stage('Start Appium') {
-            steps {
-                sh """
-                APPIUM_EXEC=/opt/homebrew/bin/appium
+        steps {
+            sh """
+            APPIUM_EXEC=/opt/homebrew/bin/appium
 
-                pids=\$(lsof -ti :${APPIUM_PORT})
-                if [ -n "\$pids" ]; then
-                    echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
-                    kill -9 \$pids
-                fi
+            pids=\$(lsof -ti :${APPIUM_PORT})
+            if [ -n "\$pids" ]; then
+                echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
+                kill -9 \$pids
+            fi
 
-                echo "Starting Appium server..."
-                nohup \$APPIUM_EXEC --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
-                APPIUM_PID=\$!
-                echo "Appium server started with PID \$APPIUM_PID on port ${APPIUM_PORT}"
-                sleep 10
-                """
-            }
+            echo "Starting Appium server..."
+            \$APPIUM_EXEC --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
+            APPIUM_PID=\$!
+            echo "Appium PID: \$APPIUM_PID"
+            tail -f appium.log &
+            sleep 20
+            """
         }
+    }
 
 
         stage('Build & Test') {
