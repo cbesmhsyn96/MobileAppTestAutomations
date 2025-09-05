@@ -42,34 +42,36 @@ pipeline {
         }
 
         stage('Start Appium') {
-        steps {
-            sh """
-            APPIUM_EXEC=/opt/homebrew/bin/appium
-            APPIUM_PORT=4723
+            steps {
+                sh """
+                export PATH=\$ANDROID_HOME/platform-tools:\$ANDROID_HOME/emulator:/opt/homebrew/bin:\$PATH
 
-            # Eğer port meşgulse kapat
-            pids=\$(lsof -ti :\$APPIUM_PORT)
-            if [ -n "\$pids" ]; then
-                echo "Port \$APPIUM_PORT already in use. Killing: \$pids"
-                kill -9 \$pids
-            fi
+                APPIUM_EXEC=/opt/homebrew/bin/appium
 
-            echo "Starting Appium server..."
-            nohup \$APPIUM_EXEC --session-override --port \$APPIUM_PORT > appium.log 2>&1 &
-            APPIUM_PID=\$!
-            echo "Appium PID: \$APPIUM_PID"
-            sleep 15  # Appium'un açılması için bekle
-            """
+                # Eğer port meşgulse kapat
+                pids=\$(lsof -ti :${APPIUM_PORT})
+                if [ -n "\$pids" ]; then
+                    echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
+                    kill -9 \$pids
+                fi
+
+                echo "Starting Appium server..."
+                nohup \$APPIUM_EXEC --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
+                APPIUM_PID=\$!
+                echo "Appium PID: \$APPIUM_PID"
+                sleep 15
+                """
+            }
         }
-    }
-
-
-
 
         stage('Build & Test') {
             steps {
                 dir('AndroidProjects/EnuygunAppTest') {
-                    sh 'mvn clean test'
+                    sh """
+                    export ANDROID_HOME=${ANDROID_HOME}
+                    export PATH=\$ANDROID_HOME/platform-tools:\$ANDROID_HOME/emulator:/opt/homebrew/bin:\$PATH
+                    mvn clean test
+                    """
                 }
             }
         }
