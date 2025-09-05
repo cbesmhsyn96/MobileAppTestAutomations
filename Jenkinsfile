@@ -8,7 +8,7 @@ pipeline {
 
     environment {
         ANDROID_HOME = '/Users/<kullanici_adi>/Library/Android/sdk'
-        PATH = "${env.ANDROID_HOME}/platform-tools:${env.ANDROID_HOME}/emulator:${env.PATH}"
+        PATH = "/usr/bin:/bin:/usr/sbin:/sbin:${env.ANDROID_HOME}/platform-tools:${env.ANDROID_HOME}/emulator:${env.PATH}"
     }
 
     stages {
@@ -20,19 +20,24 @@ pipeline {
 
         stage('Start Emulator') {
             steps {
-                sh '''
+                sh """
+                  echo "Starting Android Emulator..."
                   $ANDROID_HOME/emulator/emulator -avd Pixel_4 -no-window -no-audio &
                   adb wait-for-device
                   adb devices
+                  echo "Waiting for emulator to fully boot..."
                   sleep 30
-                '''
+                """
             }
         }
 
         stage('Start Appium') {
             steps {
-                sh 'appium --log-level error &'
-                sleep 10
+                sh """
+                  echo "Starting Appium Server..."
+                  appium --log-level error &
+                  sleep 10
+                """
             }
         }
 
