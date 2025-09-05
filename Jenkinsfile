@@ -34,11 +34,10 @@ pipeline {
 
         stage('Start Appium') {
             steps {
-                sh """
-                  echo "Starting Appium Server..."
-                  appium --log-level error &
-                  sleep 10
-                """
+                sh '''
+                adb wait-for-device
+                adb shell getprop sys.boot_completed | grep 1
+                '''
             }
         }
 

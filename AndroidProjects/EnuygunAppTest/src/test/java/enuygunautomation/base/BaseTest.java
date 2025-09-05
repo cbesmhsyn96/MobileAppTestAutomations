@@ -23,7 +23,9 @@ public class BaseTest extends Defines {
                     .setAppActivity("com.mobilatolye.android.enuygun.features.application.MainActivity")
                     .setSkipUnlock(true)
                     .setNoReset(false)
-                    .setAutoGrantPermissions(true);
+                    .setAutoGrantPermissions(true)
+                    .setAdbExecTimeout(Duration.ofSeconds(60000))
+                    .setNewCommandTimeout(Duration.ofSeconds(300));
 
             androidDriver = new AndroidDriver(
                     new URI("http://127.0.0.1:4723").toURL(), androidOptions);
