@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     tools {
-        // git 'Git 2.46.0'  // Kaldırıldı, Jenkins PATH üzerinden default git kullanacak
         maven 'Maven 3.9.3'
         jdk 'JDK22'
         allure 'Allure'
@@ -24,9 +23,6 @@ pipeline {
         stage('Start Emulator') {
             steps {
                 sh """
-                    export ANDROID_HOME=${ANDROID_HOME}
-                    export PATH=\$ANDROID_HOME/platform-tools:\$ANDROID_HOME/emulator:/opt/homebrew/bin:\$PATH
-
                     echo "Starting Android Emulator..."
                     nohup \$ANDROID_HOME/emulator/emulator -avd Pixel_4 -no-window -no-audio > emulator.log 2>&1 &
                     EMU_PID=\$!
@@ -43,38 +39,18 @@ pipeline {
             }
         }
 
-        stage('Start Appium') {
+        // Appium zaten manuel çalıştırılacak, pipeline'da başlatma kısmı kaldırıldı
+        stage('Verify Appium') {
             steps {
-                script {
-                    try {
-                        sh """
-                            export PATH=\$ANDROID_HOME/platform-tools:\$ANDROID_HOME/emulator:/opt/homebrew/bin:\$PATH
-
-                            APPIUM_EXEC=/opt/homebrew/bin/appium
-
-                            # Eğer port meşgulse kapat
-                            pids=\$(lsof -ti :${APPIUM_PORT})
-                            if [ -n "\$pids" ]; then
-                                echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
-                                kill -9 \$pids
-                            fi
-
-                            echo "Starting Appium server..."
-                            nohup \$APPIUM_EXEC --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
-                            APPIUM_PID=\$!
-                            echo "Appium PID: \$APPIUM_PID"
-
-                            # Appium server açılması için bekle
-                            for i in {1..15}; do
-                                nc -z localhost ${APPIUM_PORT} && break
-                                sleep 1
-                            done
-                            echo "Appium server should be ready."
-                        """
-                    } catch (err) {
-                        echo "Appium server start failed, continuing pipeline: ${err}"
-                    }
-                }
+                sh """
+                    echo "Checking if Appium server is running on port ${APPIUM_PORT}..."
+                    if nc -z localhost ${APPIUM_PORT}; then
+                        echo "Appium server is up!"
+                    else
+                        echo "Appium server is NOT running. Please start it manually!"
+                        exit 1
+                    fi
+                """
             }
         }
 
@@ -82,9 +58,6 @@ pipeline {
             steps {
                 dir('AndroidProjects/EnuygunAppTest') {
                     sh """
-                        export ANDROID_HOME=${ANDROID_HOME}
-                        export PATH=\$ANDROID_HOME/platform-tools:\$ANDROID_HOME/emulator:/opt/homebrew/bin:\$PATH
-
                         mvn clean test
                     """
                 }
