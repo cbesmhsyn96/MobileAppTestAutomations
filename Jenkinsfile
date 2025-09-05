@@ -10,6 +10,7 @@ pipeline {
     environment {
         ANDROID_HOME = '/Users/huseyinakcan/Library/Android/sdk'
         PATH = "/usr/bin:/bin:/usr/sbin:/sbin:${env.ANDROID_HOME}/platform-tools:${env.ANDROID_HOME}/emulator:${env.PATH}"
+        APPIUM_PORT = '4723'
     }
 
     stages {
@@ -24,8 +25,8 @@ pipeline {
                 sh """
                 echo "Starting Android Emulator..."
                 $ANDROID_HOME/emulator/emulator -avd Pixel_4 -no-window -no-audio &
+                EMU_PID=\$!
                 adb wait-for-device
-                adb devices
                 echo "Waiting for emulator to fully boot..."
                 boot_completed=""
                 until [ "\$boot_completed" -eq 1 ]; do
@@ -37,17 +38,23 @@ pipeline {
             }
         }
 
-
         stage('Start Appium') {
-        steps {
-            sh '''
-            echo "Starting Appium server..."
-            appium --session-override &
-            sleep 10  # Appium server'ın başlaması için kısa bekleme
-            '''
-        }
-        }
+            steps {
+                sh """
+                # Appium port kontrolü
+                if lsof -i :${APPIUM_PORT} >/dev/null; then
+                    echo "Port ${APPIUM_PORT} already in use, killing existing Appium process..."
+                    lsof -ti :${APPIUM_PORT} | xargs kill -9 || true
+                fi
 
+                echo "Starting Appium server..."
+                appium --session-override --port ${APPIUM_PORT} &
+                APPIUM_PID=\$!
+                sleep 10  # Appium server'ın başlaması için kısa bekleme
+                echo "Appium server started with PID \$APPIUM_PID on port ${APPIUM_PORT}"
+                """
+            }
+        }
 
         stage('Build & Test') {
             steps {
