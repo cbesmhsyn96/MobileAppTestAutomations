@@ -45,22 +45,24 @@ pipeline {
         steps {
             sh """
             APPIUM_EXEC=/opt/homebrew/bin/appium
+            APPIUM_PORT=4723
 
             # Eğer port meşgulse kapat
-            pids=\$(lsof -ti :${APPIUM_PORT})
+            pids=\$(lsof -ti :\$APPIUM_PORT)
             if [ -n "\$pids" ]; then
-                echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
+                echo "Port \$APPIUM_PORT already in use. Killing: \$pids"
                 kill -9 \$pids
             fi
 
             echo "Starting Appium server..."
-            nohup \$APPIUM_EXEC --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
+            nohup \$APPIUM_EXEC --session-override --port \$APPIUM_PORT > appium.log 2>&1 &
             APPIUM_PID=\$!
             echo "Appium PID: \$APPIUM_PID"
             sleep 15  # Appium'un açılması için bekle
             """
         }
     }
+
 
 
 
