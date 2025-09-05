@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Tests</a></td><td class="num">17</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">399,747</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">enuygunautomation.tests.loginpage.LoginScreen</td><td><a href="#m0">successLoginWithFacebook</a></td><td rowspan="1">1757099833357</td><td rowspan="1">40087</td></tr><tr><th colspan="4">Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="14">enuygunautomation.tests.loginpage.LoginScreen</td><td><a href="#m1">asd</a></td><td rowspan="1">1757099944930</td><td rowspan="1">20143</td></tr><tr class="passedeven"><td><a href="#m2">emptyEmailAndPasswordWarnings</a></td><td rowspan="1">1757099882556</td><td rowspan="1">8703</td></tr><tr class="passedeven"><td><a href="#m3">firstPartOfLoginSceeenControl</a></td><td rowspan="1">1757099675290</td><td rowspan="1">9883</td></tr><tr class="passedeven"><td><a href="#m4">fourthPartOfLoginSceeenControl</a></td><td rowspan="1">1757099734350</td><td rowspan="1">8161</td></tr><tr class="passedeven"><td><a href="#m5">invalidEmailAndPasswordWarnings</a></td><td rowspan="1">1757099928015</td><td rowspan="1">10477</td></tr><tr class="passedeven"><td><a href="#m6">invalidEmailWarningMessage</a></td><td rowspan="1">1757099898296</td><td rowspan="1">9140</td></tr><tr class="passedeven"><td><a href="#m7">invalidPasswordWarningMessage</a></td><td rowspan="1">1757099913360</td><td rowspan="1">8504</td></tr><tr class="passedeven"><td><a href="#m8">passwordHidderButtonFunctionControl</a></td><td rowspan="1">1757099756202</td><td rowspan="1">11214</td></tr><tr class="passedeven"><td><a href="#m9">secondPartOfLoginSceeenControl</a></td><td rowspan="1">1757099694701</td><td rowspan="1">8244</td></tr><tr class="passedeven"><td><a href="#m10">sifremiUnuttumButtonFunctionControl</a></td><td rowspan="1">1757099796815</td><td rowspan="1">9145</td></tr><tr class="passedeven"><td><a href="#m11">successLoginWithEposta</a></td><td rowspan="1">1757099811809</td><td rowspan="1">15676</td></tr><tr class="passedeven"><td><a href="#m12">successLoginWithGoogle</a></td><td rowspan="1">1757099972520</td><td rowspan="1">18047</td></tr><tr class="passedeven"><td><a href="#m13">thirdPartOfLoginSceeenControl</a></td><td rowspan="1">1757099716149</td><td rowspan="1">9171</td></tr><tr class="passedeven"><td><a href="#m14">uyeOlmdnDevamEtButtonFunctionControl</a></td><td rowspan="1">1757099776172</td><td rowspan="1">12690</td></tr><tr class="passedodd"><td rowspan="3">enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen</td><td><a href="#m15">allowNotificationButtonAction</a></td><td rowspan="1">1757100019942</td><td rowspan="1">14145</td></tr><tr class="passedodd"><td><a href="#m16">remindMeLaterButtonAction</a></td><td rowspan="1">1757100042387</td><td rowspan="1">15998</td></tr><tr class="passedodd"><td><a href="#m17">wellcomeSlidesControll</a></td><td rowspan="1">1757099999368</td><td rowspan="1">10640</td></tr></tbody>
+</table>
+<h2>Tests</h2><h3 id="m0">enuygunautomation.tests.loginpage.LoginScreen#successLoginWithFacebook</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: com.android.chrome:id/ack_button (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at enuygunautomation.helper.WaitHelper.waitedElementUntilPresencable(WaitHelper.java:18)
+	at enuygunautomation.tests.loginpage.LoginScreen.successLoginWithFacebook(LoginScreen.java:298)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6&apos;, java.version: &apos;22.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [843d9ce4-cea4-4cf3-8066-683f0cbdadb2, findElement {using=id, value=com.android.chrome:id/ack_button}]
+Capabilities {appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, noReset: false, platformName: ANDROID, platformVersion: 16, skipUnlock: true, udid: emulator-5554}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 843d9ce4-cea4-4cf3-8066-683f0cbdadb2
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 32 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">enuygunautomation.tests.loginpage.LoginScreen#asd</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">enuygunautomation.tests.loginpage.LoginScreen#emptyEmailAndPasswordWarnings</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">enuygunautomation.tests.loginpage.LoginScreen#firstPartOfLoginSceeenControl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">enuygunautomation.tests.loginpage.LoginScreen#fourthPartOfLoginSceeenControl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">enuygunautomation.tests.loginpage.LoginScreen#invalidEmailAndPasswordWarnings</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">enuygunautomation.tests.loginpage.LoginScreen#invalidEmailWarningMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">enuygunautomation.tests.loginpage.LoginScreen#invalidPasswordWarningMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">enuygunautomation.tests.loginpage.LoginScreen#passwordHidderButtonFunctionControl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">enuygunautomation.tests.loginpage.LoginScreen#secondPartOfLoginSceeenControl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">enuygunautomation.tests.loginpage.LoginScreen#sifremiUnuttumButtonFunctionControl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">enuygunautomation.tests.loginpage.LoginScreen#successLoginWithEposta</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">enuygunautomation.tests.loginpage.LoginScreen#successLoginWithGoogle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">enuygunautomation.tests.loginpage.LoginScreen#thirdPartOfLoginSceeenControl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">enuygunautomation.tests.loginpage.LoginScreen#uyeOlmdnDevamEtButtonFunctionControl</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen#allowNotificationButtonAction</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen#remindMeLaterButtonAction</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen#wellcomeSlidesControll</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

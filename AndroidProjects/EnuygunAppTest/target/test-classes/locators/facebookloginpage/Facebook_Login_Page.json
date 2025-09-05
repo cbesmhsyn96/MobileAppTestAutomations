@@ -1,0 +1,77 @@
+[
+  {
+    "key": "FacebookLoginPage_EmailTextBox",
+    "value": "//android.widget.EditText[@resource-id=\"m_login_email\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "FacebookLoginPage_PasswordTextBox",
+    "value": "//android.widget.EditText[@resource-id=\"m_login_password\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "FacebookLoginPage_LoginButton",
+    "value": "//android.widget.Button[@text=\"Log in\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "FacebookLoginPage_RedirectButton",
+    "value": "//*[starts-with(@resource-id,'u_0_0_')]",
+    "type": "xpath"
+  },
+  {
+    "key": "FacebookLoginPage_LoggedInBefore_Text",
+    "value": "//android.widget.TextView[@text=\"Daha önce Facebook ile Enuygun.com'a giriş yaptın.\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "FacebookLogin_PrivacyGotIt_Button",
+    "value": "com.android.chrome:id/ack_button",
+    "type": "id"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  }
+]

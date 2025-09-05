@@ -1,0 +1,9 @@
+enuygunautomation/base/BaseTest.class
+enuygunautomation/tests/loginpage/LoginScreen.class
+enuygunautomation/env/Defines.class
+enuygunautomation/helper/DeserialLocatorFiles.class
+enuygunautomation/helper/SwitchByLocatorElement$1.class
+enuygunautomation/tests/welcomeslides/WellcomeSlidesScreen.class
+enuygunautomation/helper/AllureAttachmentListener.class
+enuygunautomation/helper/SwitchByLocatorElement.class
+enuygunautomation/helper/WaitHelper.class

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="401.909" tests="18" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/target/test-classes:/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/target/classes:/Users/huseyinakcan/.m2/repository/io/qameta/allure/allure-testng/2.15.0/allure-testng-2.15.0.jar:/Users/huseyinakcan/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/huseyinakcan/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/huseyinakcan/.m2/repository/io/qameta/allure/allure-test-filter/2.15.0/allure-test-filter-2.15.0.jar:/Users/huseyinakcan/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/huseyinakcan/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/huseyinakcan/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-java/4.34.0/selenium-java-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-api/4.34.0/selenium-api-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.34.0/selenium-chrome-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.34.0/selenium-chromium-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-json/4.34.0/selenium-json-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.34.0/selenium-manager-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.34.0/selenium-devtools-v136-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v137/4.34.0/selenium-devtools-v137-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v138/4.34.0/selenium-devtools-v138-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.34.0/selenium-edge-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.34.0/selenium-firefox-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-http/4.34.0/selenium-http-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.34.0/selenium-ie-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.34.0/selenium-remote-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/huseyinakcan/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/huseyinakcan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/huseyinakcan/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-api/1.51.0/opentelemetry-api-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-context/1.51.0/opentelemetry-context-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.51.0/opentelemetry-exporter-logging-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.51.0/opentelemetry-sdk-common-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.51.0/opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.51.0/opentelemetry-sdk-extension-autoconfigure-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.51.0/opentelemetry-sdk-trace-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.51.0/opentelemetry-sdk-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.51.0/opentelemetry-sdk-metrics-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.51.0/opentelemetry-sdk-logs-1.51.0.jar:/Users/huseyinakcan/.m2/repository/net/bytebuddy/byte-buddy/1.17.6/byte-buddy-1.17.6.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-os/4.34.0/selenium-os-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/apache/commons/commons-exec/1.5.0/commons-exec-1.5.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.34.0/selenium-safari-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-support/4.34.0/selenium-support-4.34.0.jar:/Users/huseyinakcan/.m2/repository/io/appium/java-client/9.5.0/java-client-9.5.0.jar:/Users/huseyinakcan/.m2/repository/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar:/Users/huseyinakcan/.m2/repository/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar:/Users/huseyinakcan/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/huseyinakcan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2.jar:/Users/huseyinakcan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar:/Users/huseyinakcan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2.jar:/Users/huseyinakcan/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.1/log4j-api-2.25.1.jar:/Users/huseyinakcan/.m2/repository/org/apache/logging/log4j/log4j-core/2.25.1/log4j-core-2.25.1.jar:/Users/huseyinakcan/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.25.1/log4j-slf4j2-impl-2.25.1.jar:/Users/huseyinakcan/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Istanbul"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="TR"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/target/surefire/surefirebooter-20250905221418033_3.jar /Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/target/surefire 2025-09-05T22-14-17_918-jvmRun1 surefire-20250905221418033_1tmp surefire_0-20250905221418033_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/target/test-classes:/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/target/classes:/Users/huseyinakcan/.m2/repository/io/qameta/allure/allure-testng/2.15.0/allure-testng-2.15.0.jar:/Users/huseyinakcan/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/huseyinakcan/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/huseyinakcan/.m2/repository/io/qameta/allure/allure-test-filter/2.15.0/allure-test-filter-2.15.0.jar:/Users/huseyinakcan/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/huseyinakcan/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/huseyinakcan/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-java/4.34.0/selenium-java-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-api/4.34.0/selenium-api-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.34.0/selenium-chrome-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.34.0/selenium-chromium-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-json/4.34.0/selenium-json-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.34.0/selenium-manager-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v136/4.34.0/selenium-devtools-v136-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v137/4.34.0/selenium-devtools-v137-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v138/4.34.0/selenium-devtools-v138-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.34.0/selenium-edge-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.34.0/selenium-firefox-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-http/4.34.0/selenium-http-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.34.0/selenium-ie-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.34.0/selenium-remote-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/com/google/guava/guava/33.4.8-jre/guava-33.4.8-jre.jar:/Users/huseyinakcan/.m2/repository/com/google/guava/failureaccess/1.0.3/failureaccess-1.0.3.jar:/Users/huseyinakcan/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/huseyinakcan/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-api/1.51.0/opentelemetry-api-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-context/1.51.0/opentelemetry-context-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.51.0/opentelemetry-exporter-logging-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.51.0/opentelemetry-sdk-common-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.51.0/opentelemetry-sdk-extension-autoconfigure-spi-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.51.0/opentelemetry-sdk-extension-autoconfigure-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.51.0/opentelemetry-sdk-trace-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.51.0/opentelemetry-sdk-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.51.0/opentelemetry-sdk-metrics-1.51.0.jar:/Users/huseyinakcan/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.51.0/opentelemetry-sdk-logs-1.51.0.jar:/Users/huseyinakcan/.m2/repository/net/bytebuddy/byte-buddy/1.17.6/byte-buddy-1.17.6.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-os/4.34.0/selenium-os-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/apache/commons/commons-exec/1.5.0/commons-exec-1.5.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.34.0/selenium-safari-driver-4.34.0.jar:/Users/huseyinakcan/.m2/repository/org/seleniumhq/selenium/selenium-support/4.34.0/selenium-support-4.34.0.jar:/Users/huseyinakcan/.m2/repository/io/appium/java-client/9.5.0/java-client-9.5.0.jar:/Users/huseyinakcan/.m2/repository/com/google/code/gson/gson/2.13.1/gson-2.13.1.jar:/Users/huseyinakcan/.m2/repository/com/google/errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.jar:/Users/huseyinakcan/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/huseyinakcan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.2/jackson-databind-2.19.2.jar:/Users/huseyinakcan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.2/jackson-annotations-2.19.2.jar:/Users/huseyinakcan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.2/jackson-core-2.19.2.jar:/Users/huseyinakcan/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.1/log4j-api-2.25.1.jar:/Users/huseyinakcan/.m2/repository/org/apache/logging/log4j/log4j-core/2.25.1/log4j-core-2.25.1.jar:/Users/huseyinakcan/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.25.1/log4j-slf4j2-impl-2.25.1.jar:/Users/huseyinakcan/.m2/repository/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar:"/>
+    <property name="allure.results.directory" value="/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/huseyinakcan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/target/surefire/surefirebooter-20250905221418033_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="huseyinakcan"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.6"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/huseyinakcan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/1x/3mpr39896hn7tj95ls6hh8t40000gn/T/"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/huseyinakcan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="firstPartOfLoginSceeenControl" classname="enuygunautomation.tests.loginpage.LoginScreen" time="9.808">
+    <system-out><![CDATA[&amp#27;[33mIgnoring duplicate listener : io.qameta.allure.testng.AllureTestNg 2025-09-05 22:14:19 WARN  [TestNG.java]
+&amp#27;[m&amp#27;[33mIgnoring duplicate listener : io.qameta.allure.testng.AllureTestNg 2025-09-05 22:14:19 WARN  [TestNG.java]
+&amp#27;[m&amp#27;[33mIgnoring duplicate listener : io.qameta.allure.testng.AllureTestNg 2025-09-05 22:14:19 WARN  [TestNG.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı bekleniyor.            2025-09-05 22:14:35 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı görüldü.               2025-09-05 22:14:41 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:14:41 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:14:41 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mENUYGUN logosu görünene kadar bekleniyor.                    2025-09-05 22:14:41 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mENUYGUN logosu göründü.                                      2025-09-05 22:14:43 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' menü butonunun seçili olduğu kontrol ediliyor.   2025-09-05 22:14:43 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' menü butonunun seçili olduğu görüldü.            2025-09-05 22:14:45 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="secondPartOfLoginSceeenControl" classname="enuygunautomation.tests.loginpage.LoginScreen" time="8.257">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:14:45 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı bekleniyor.            2025-09-05 22:14:54 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı görüldü.               2025-09-05 22:15:00 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:15:01 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:15:01 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı kontrol ediliyor.      2025-09-05 22:15:01 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı görüldü.               2025-09-05 22:15:02 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.        2025-09-05 22:15:02 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı görüldü.                 2025-09-05 22:15:02 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında şifre gizleme butonu kontrol ediliyor. 2025-09-05 22:15:02 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında şifre gizleme butonu görüldü.          2025-09-05 22:15:02 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="thirdPartOfLoginSceeenControl" classname="enuygunautomation.tests.loginpage.LoginScreen" time="9.171">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:15:02 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı bekleniyor.            2025-09-05 22:15:16 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı görüldü.               2025-09-05 22:15:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:15:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:15:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mENUYGUN logosu görünene kadar bekleniyor.                    2025-09-05 22:15:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mENUYGUN logosu göründü.                                      2025-09-05 22:15:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Giriş yap'(submit) butonu kontrol ediliyor. 2025-09-05 22:15:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Giriş yap'(submit) butonu görüldü.    2025-09-05 22:15:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifremi unuttum' butonu kontrol ediliyor. 2025-09-05 22:15:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifremi unuttum' butonu görüldü.      2025-09-05 22:15:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Üye olmadan devam et' butonu kontrol ediliyor. 2025-09-05 22:15:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Üye olmadan devam et' butonu görüldü. 2025-09-05 22:15:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="fourthPartOfLoginSceeenControl" classname="enuygunautomation.tests.loginpage.LoginScreen" time="8.408">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:15:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı bekleniyor.            2025-09-05 22:15:34 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı görüldü.               2025-09-05 22:15:40 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:15:40 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:15:40 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mENUYGUN logosu görünene kadar bekleniyor.                    2025-09-05 22:15:40 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mENUYGUN logosu göründü.                                      2025-09-05 22:15:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Facebook ile devam et' butonu kontrol ediliyor. 2025-09-05 22:15:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Facebook ile devam et' butonu görüldü. 2025-09-05 22:15:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Google ile devam et' butonu kontrol ediliyor. 2025-09-05 22:15:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Google ile devam et' butonu görüldü.  2025-09-05 22:15:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="passwordHidderButtonFunctionControl" classname="enuygunautomation.tests.loginpage.LoginScreen" time="11.223">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:15:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı bekleniyor.            2025-09-05 22:15:56 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı görüldü.               2025-09-05 22:16:01 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:16:01 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:16:01 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mENUYGUN logosu görünene kadar bekleniyor.                    2025-09-05 22:16:01 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mENUYGUN logosu göründü.                                      2025-09-05 22:16:03 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' menü butonunun seçili olduğu kontrol ediliyor.   2025-09-05 22:16:03 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' menü butonunun seçili olduğu görüldü.            2025-09-05 22:16:04 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında şifre gizleme butonu kontrol ediliyor. 2025-09-05 22:16:04 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında şifre gizleme butonu görüldü.          2025-09-05 22:16:04 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanına 'zorSfr091#' giriliyor. 2025-09-05 22:16:04 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanına 'zorSfr091#' girildi.  2025-09-05 22:16:05 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanının 'text' attribute unun value sunun 'zorSfr091#' olduğu kontrol ediliyor. 2025-09-05 22:16:05 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanının 'text' attribute unun value sunun 'zorSfr091#' olduğu görüldü. 2025-09-05 22:16:06 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanının 'password' attribute unun value sunun 'true' olduğu kontrol ediliyor. 2025-09-05 22:16:06 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanının 'password' attribute unun value sunun 'true' olduğu görüldü. 2025-09-05 22:16:06 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında şifre gizleme butonuna tıklanıyor.     2025-09-05 22:16:06 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında şifre gizleme butona tıklandı.         2025-09-05 22:16:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanının 'password' attribute unun value sunun 'false' olduğu kontrol ediliyor. 2025-09-05 22:16:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanının 'password' attribute unun value sunun 'false' olduğu görüldü. 2025-09-05 22:16:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="uyeOlmdnDevamEtButtonFunctionControl" classname="enuygunautomation.tests.loginpage.LoginScreen" time="12.721">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:16:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı bekleniyor.            2025-09-05 22:16:16 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı görüldü.               2025-09-05 22:16:21 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:16:21 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:16:21 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Üye olmadan devam et' butonuna tıklanıyor.                  2025-09-05 22:16:21 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Üye olmadan devam et' butonuna tıklandı.                    2025-09-05 22:16:24 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAna ekrana yönleniliyor.                                     2025-09-05 22:16:24 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAna ekrana yönlenildi.                                       2025-09-05 22:16:28 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="sifremiUnuttumButtonFunctionControl" classname="enuygunautomation.tests.loginpage.LoginScreen" time="9.157">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:16:28 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:16:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:16:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Giriş yap'(submit) butonu kontrol ediliyor. 2025-09-05 22:16:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Giriş yap'(submit) butonu görüldü.    2025-09-05 22:16:44 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Şifremi unuttum' butonuna tıklanıyor.                       2025-09-05 22:16:44 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Şifremi unuttum' butonuna tıklandı.                         2025-09-05 22:16:45 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifremi Unuttum pop-up' ının açıldığı kontrol ediliyor.      2025-09-05 22:16:45 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifremi Unuttum pop-up' ının açıldığı görüldü.               2025-09-05 22:16:45 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="successLoginWithEposta" classname="enuygunautomation.tests.loginpage.LoginScreen" time="15.671">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:16:45 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:16:56 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:16:56 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı kontrol ediliyor.      2025-09-05 22:16:56 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı görüldü.               2025-09-05 22:16:58 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.        2025-09-05 22:16:58 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı görüldü.                 2025-09-05 22:16:58 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'E-posta' alanına 'hsynakcn0mobile1test@gmail.com' giriliyor. 2025-09-05 22:16:58 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'E-posta' alanına 'hsynakcn0mobile1test@gmail.com' girildi.  2025-09-05 22:16:59 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Şifre' alanına 'zorSfr091#' giriliyor.                      2025-09-05 22:16:59 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Şifre' alanına 'zorSfr091#' girildi.                        2025-09-05 22:17:00 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap'(submit) butonuna tıklanıyor.                     2025-09-05 22:17:00 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap'(submit) butonuna tıklandı.                       2025-09-05 22:17:01 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAna ekranın açılması bekleniyor.                             2025-09-05 22:17:01 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAna ekranın açıldı.                                          2025-09-05 22:17:04 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mHesabım menüsüne gidiliyor.                                  2025-09-05 22:17:04 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mHesabım menüsüne gidildi.                                    2025-09-05 22:17:06 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mHesabım menüsünde 'hsynakcn0mobile1test@gmail.com' e-postası kontrol ediliyor. 2025-09-05 22:17:06 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mHesabım menüsünde 'hsynakcn0mobile1test@gmail.com' e-postası olduğu doğrulandı. 2025-09-05 22:17:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="successLoginWithFacebook" classname="enuygunautomation.tests.loginpage.LoginScreen" time="40.764">
+    <failure message="Expected condition failed: waiting for presence of element located by: By.id: com.android.chrome:id/ack_button (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: com.android.chrome:id/ack_button (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at enuygunautomation.helper.WaitHelper.waitedElementUntilPresencable(WaitHelper.java:18)
+	at enuygunautomation.tests.loginpage.LoginScreen.successLoginWithFacebook(LoginScreen.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [843d9ce4-cea4-4cf3-8066-683f0cbdadb2, findElement {using=id, value=com.android.chrome:id/ack_button}]
+Capabilities {appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, noReset: false, platformName: ANDROID, platformVersion: 16, skipUnlock: true, udid: emulator-5554}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 843d9ce4-cea4-4cf3-8066-683f0cbdadb2
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 32 more
+]]></failure>
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:17:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[mFacebook app yok, geçildi.
+&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:17:20 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:17:20 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı kontrol ediliyor.      2025-09-05 22:17:20 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı görüldü.               2025-09-05 22:17:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.        2025-09-05 22:17:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı görüldü.                 2025-09-05 22:17:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Facebook ile devam et' butonuna tıklanıyor.                 2025-09-05 22:17:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Facebook ile devam et' butonuna tıklandı.                   2025-09-05 22:17:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Enhanced ad privacy in Chrome' ekranının açılması bekleniyor. 2025-09-05 22:17:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="emptyEmailAndPasswordWarnings" classname="enuygunautomation.tests.loginpage.LoginScreen" time="8.754">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:17:54 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:18:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:18:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı kontrol ediliyor.      2025-09-05 22:18:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı görüldü.               2025-09-05 22:18:09 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.        2025-09-05 22:18:09 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı görüldü.                 2025-09-05 22:18:09 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' butonuna tıklanıyor.                             2025-09-05 22:18:09 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanı uyarı mesajı kontrol ediliyor.                 2025-09-05 22:18:09 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanı için 'Lütfen e-posta adresinin doğruluğundan emin olun.' mesajı görüldü. 2025-09-05 22:18:10 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanı uyarı mesajı kontrol ediliyor.                   2025-09-05 22:18:10 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanı için 'Lütfen geçerli bir şifre girin.' mesajı görüldü. 2025-09-05 22:18:11 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="invalidEmailWarningMessage" classname="enuygunautomation.tests.loginpage.LoginScreen" time="9.138">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:18:11 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:18:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:18:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı kontrol ediliyor.      2025-09-05 22:18:22 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı görüldü.               2025-09-05 22:18:24 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.        2025-09-05 22:18:24 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı görüldü.                 2025-09-05 22:18:24 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanına geçersiz e-posta giriliyor: invalidEmailFormat 2025-09-05 22:18:24 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanına geçersiz e-posta girildi.                    2025-09-05 22:18:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' butonuna tıklanıyor.                             2025-09-05 22:18:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanı uyarı mesajı kontrol ediliyor.                 2025-09-05 22:18:26 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanı için 'Lütfen e-posta adresinin doğruluğundan emin olun.' mesajı görüldü. 2025-09-05 22:18:27 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="invalidPasswordWarningMessage" classname="enuygunautomation.tests.loginpage.LoginScreen" time="8.509">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:18:27 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:18:37 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:18:37 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı kontrol ediliyor.      2025-09-05 22:18:37 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı görüldü.               2025-09-05 22:18:39 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.        2025-09-05 22:18:39 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı görüldü.                 2025-09-05 22:18:39 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanına geçersiz şifre giriliyor: aSD-*                2025-09-05 22:18:39 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanına girilen 'aSD-*' değeri görüldü.                2025-09-05 22:18:40 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' butonuna tıklanıyor.                             2025-09-05 22:18:40 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanı uyarı mesajı kontrol ediliyor.                   2025-09-05 22:18:41 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanı için 'Lütfen geçerli bir şifre girin.' mesajı görüldü. 2025-09-05 22:18:41 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="invalidEmailAndPasswordWarnings" classname="enuygunautomation.tests.loginpage.LoginScreen" time="10.477">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:18:41 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:18:52 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:18:52 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı kontrol ediliyor.      2025-09-05 22:18:52 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı görüldü.               2025-09-05 22:18:54 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.        2025-09-05 22:18:54 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı görüldü.                 2025-09-05 22:18:54 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanına geçersiz e-posta giriliyor: hsynakcn0mobile1test@gma 2025-09-05 22:18:54 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanına girilen 'hsynakcn0mobile1test@gma' değeri görüldü. 2025-09-05 22:18:55 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanına geçersiz şifre giriliyor: aSD-*                2025-09-05 22:18:55 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanına girilen 'aSD-*' değeri görüldü.                2025-09-05 22:18:57 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' butonuna tıklanıyor.                             2025-09-05 22:18:57 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanı uyarı mesajı kontrol ediliyor.                 2025-09-05 22:18:57 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mE-posta alanı için 'Lütfen e-posta adresinin doğruluğundan emin olun.' mesajı görüldü. 2025-09-05 22:18:58 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanı uyarı mesajı kontrol ediliyor.                   2025-09-05 22:18:58 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mŞifre alanı için 'Lütfen geçerli bir şifre girin.' mesajı görüldü. 2025-09-05 22:18:58 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="asd" classname="enuygunautomation.tests.loginpage.LoginScreen" time="20.148">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:18:58 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[mFacebook app yok, geçildi.
+&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:19:12 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:19:12 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı kontrol ediliyor.      2025-09-05 22:19:12 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı görüldü.               2025-09-05 22:19:14 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.        2025-09-05 22:19:14 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı görüldü.                 2025-09-05 22:19:14 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Facebook ile devam et' butonuna tıklanıyor.                 2025-09-05 22:19:14 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Facebook ile devam et' butonuna tıklandı.                   2025-09-05 22:19:15 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="successLoginWithGoogle" classname="enuygunautomation.tests.loginpage.LoginScreen" time="18.052">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:19:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonu görüldü.                        2025-09-05 22:19:36 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mAçılış slaytı kapatma butonuna tıklandı.                     2025-09-05 22:19:36 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı kontrol ediliyor.      2025-09-05 22:19:36 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'E-posta' alanı görüldü.               2025-09-05 22:19:38 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.        2025-09-05 22:19:38 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Giriş yap' ekranında 'Şifre' alanı görüldü.                 2025-09-05 22:19:38 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Google ile devam et' butonuna tıklanıyor.                   2025-09-05 22:19:38 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Google ile devam et' butonuna tıklandı.                     2025-09-05 22:19:38 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Choose an account' pop-up' ının açılması bekleniyor.        2025-09-05 22:19:38 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Choose an account' pop-up' ı açıldı.                        2025-09-05 22:19:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Choose an account' pop-up' ında 'hsynakcn0mobile1test@gmail.com' hesabı seçiliyor. 2025-09-05 22:19:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Choose an account' pop-up' ında 'hsynakcn0mobile1test@gmail.com' hesabı seçildi. 2025-09-05 22:19:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Hesabım menüsüne gidiliyor.'                                2025-09-05 22:19:42 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Hesabım menüsüne gidildi.'                                  2025-09-05 22:19:50 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mHesabım menüsünde Google hesabı seçilen 'hsynakcn0mobile1test@gmail.com' e-postası kontrol ediliyor. 2025-09-05 22:19:50 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mHesabım menüsünde Google hesabı seçilen 'hsynakcn0mobile1test@gmail.com' e-postası görüldü. 2025-09-05 22:19:50 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="wellcomeSlidesControll" classname="enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen" time="10.651">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:19:50 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m------------------------------------------Tüm seyahatin tek uygulamada
+&amp#27;[32m'Tüm seyahatin tek uygulamada' yazısı görüldü.               2025-09-05 22:20:03 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mMainPageSlideIntroImage görüldü.                             2025-09-05 22:20:03 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mUçak bileti, otobüs bileti, otel,... yazısı görüldü.         2025-09-05 22:20:03 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mBiletim güvende alanına kaydırıldı.                          2025-09-05 22:20:04 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'Biletim güvende' yazısı görüldü.                            2025-09-05 22:20:05 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mMainPageSlideSecondImage görüldü.                            2025-09-05 22:20:06 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mUçuşa 3 saate kadar ki bilet iptallerinde... yazısı görüldü. 2025-09-05 22:20:06 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mİlk bilen sen ol alanına kaydırıldı.                         2025-09-05 22:20:07 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32m'İlk bilen sen ol!' yazısı görüldü.                          2025-09-05 22:20:08 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mMainPageSlideThirdImage görüldü.                             2025-09-05 22:20:08 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mEnuygun’un özel kampanyalarından ve... yazısı görüldü.       2025-09-05 22:20:09 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mBildirimlere izin ver butonu görüldü.                        2025-09-05 22:20:09 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mDaha sonra hatırlat butonu görüldü.                          2025-09-05 22:20:09 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mSlide Close butonu görüldü.                                  2025-09-05 22:20:10 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="allowNotificationButtonAction" classname="enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen" time="14.166">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:20:10 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mBiletim güvende alanına kaydırıldı.                          2025-09-05 22:20:25 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mİlk bilen sen ol alanına kaydırıldı.                         2025-09-05 22:20:27 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mBildirimlere izin ver butonuna tıklandı.                     2025-09-05 22:20:28 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mGiriş yap ekranına yönleniyor.                               2025-09-05 22:20:28 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mGiriş yap ekranı açıldı.                                     2025-09-05 22:20:34 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+  <testcase name="remindMeLaterButtonAction" classname="enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen" time="16.017">
+    <system-out><![CDATA[&amp#27;[32mTest sonlandı.                                               2025-09-05 22:20:34 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mBiletim güvende alanına kaydırıldı.                          2025-09-05 22:20:48 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mİlk bilen sen ol alanına kaydırıldı.                         2025-09-05 22:20:50 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mDaha sonra hatırlat butonuna tıklandı.                       2025-09-05 22:20:53 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mGiriş yap ekranına yönleniyor.                               2025-09-05 22:20:53 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m&amp#27;[32mGiriş yap ekranı açıldı.                                     2025-09-05 22:20:58 INFO  [WellcomeSlidesScreen.java]
+&amp#27;[m]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,27 @@
+[
+  {
+    "key": "HomeScreen_ENUYGUN_Text",
+    "value": "com.mobilatolye.android.enuygun:id/image_search_fragment_logo",
+    "type": "id"
+  },
+  {
+    "key": "HomeScreen_Hesabim_Tab",
+    "value": "com.mobilatolye.android.enuygun:id/accountFragment",
+    "type": "id"
+  },
+  {
+    "key": "HomeScreen_AllowNotif_PopUp_Header",
+    "value": "com.android.permissioncontroller:id/permission_message",
+    "type": "id"
+  },
+  {
+    "key": "HomeScreen_AllowNotif_PopUp_DontAllow",
+    "value": "com.android.permissioncontroller:id/permission_deny_button",
+    "type": "id"
+  },
+  {
+    "key": "",
+    "value": "",
+    "type": ""
+  }
+]
