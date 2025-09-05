@@ -23,13 +23,16 @@ pipeline {
         stage('Start Emulator') {
             steps {
                 sh """
+                export ANDROID_HOME=${ANDROID_HOME}
+                export PATH=\$ANDROID_HOME/platform-tools:\$ANDROID_HOME/emulator:\$PATH
+
                 echo "Starting Android Emulator..."
-                $ANDROID_HOME/emulator/emulator -avd Pixel_4 -no-window -no-audio &
+                nohup \$ANDROID_HOME/emulator/emulator -avd Pixel_4 -no-window -no-audio > emulator.log 2>&1 &
                 EMU_PID=\$!
                 adb wait-for-device
                 echo "Waiting for emulator to fully boot..."
                 boot_completed=""
-                until [ "\$boot_completed" -eq 1 ]; do
+                until [ "\$boot_completed" = "1" ]; do
                     boot_completed=\$(adb shell getprop sys.boot_completed 2>/dev/null || echo 0)
                     sleep 5
                 done
@@ -38,24 +41,25 @@ pipeline {
             }
         }
 
-        stage('Start Appium') {
-            steps {
-                sh """
-                # Appium port kontrolü
-                pids=\$(lsof -ti :${APPIUM_PORT})
-                if [ -n "\$pids" ]; then
-                    echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
-                    kill -9 \$pids
-                fi
 
-                echo "Starting Appium server..."
-                nohup appium --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
-                APPIUM_PID=\$!
-                echo "Appium server started with PID \$APPIUM_PID on port ${APPIUM_PORT}"
-                sleep 10
-                """
-            }
+        stage('Start Appium') {
+        steps {
+            sh """
+            pids=\$(lsof -ti :${APPIUM_PORT})
+            if [ -n "\$pids" ]; then
+                echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
+                kill -9 \$pids
+            fi
+
+            echo "Starting Appium server..."
+            nohup appium --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
+            APPIUM_PID=\$!
+            echo "Appium server started with PID \$APPIUM_PID on port ${APPIUM_PORT}"
+            sleep 10
+            """
         }
+    }
+
 
 
         stage('Build & Test') {
