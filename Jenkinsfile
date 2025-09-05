@@ -2,8 +2,7 @@ pipeline {
     agent any
 
     tools {
-        // Jenkins'te tanımlı olan Git tool ismini kullanabilirsin. Eğer global PATH'te mevcutsa tools'dan kaldırabilirsin.
-        git 'Git 2.46.0'  
+        // git 'Git 2.46.0'  // Kaldırıldı, Jenkins PATH üzerinden default git kullanacak
         maven 'Maven 3.9.3'
         jdk 'JDK22'
         allure 'Allure'
@@ -11,7 +10,7 @@ pipeline {
 
     environment {
         ANDROID_HOME = '/Users/huseyinakcan/Library/Android/sdk'
-        PATH = "${env.ANDROID_HOME}/platform-tools:${env.ANDROID_HOME}/emulator:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:${env.PATH}"
+        PATH = "${env.ANDROID_HOME}/platform-tools:${env.ANDROID_HOME}/emulator:/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin"
         APPIUM_PORT = '4723'
     }
 
@@ -46,30 +45,36 @@ pipeline {
 
         stage('Start Appium') {
             steps {
-                sh """
-                    export PATH=\$ANDROID_HOME/platform-tools:\$ANDROID_HOME/emulator:/opt/homebrew/bin:\$PATH
+                script {
+                    try {
+                        sh """
+                            export PATH=\$ANDROID_HOME/platform-tools:\$ANDROID_HOME/emulator:/opt/homebrew/bin:\$PATH
 
-                    APPIUM_EXEC=/opt/homebrew/bin/appium
+                            APPIUM_EXEC=/opt/homebrew/bin/appium
 
-                    # Eğer port meşgulse kapat
-                    pids=\$(lsof -ti :${APPIUM_PORT})
-                    if [ -n "\$pids" ]; then
-                        echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
-                        kill -9 \$pids
-                    fi
+                            # Eğer port meşgulse kapat
+                            pids=\$(lsof -ti :${APPIUM_PORT})
+                            if [ -n "\$pids" ]; then
+                                echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
+                                kill -9 \$pids
+                            fi
 
-                    echo "Starting Appium server..."
-                    nohup \$APPIUM_EXEC --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
-                    APPIUM_PID=\$!
-                    echo "Appium PID: \$APPIUM_PID"
+                            echo "Starting Appium server..."
+                            nohup \$APPIUM_EXEC --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
+                            APPIUM_PID=\$!
+                            echo "Appium PID: \$APPIUM_PID"
 
-                    # Appium server açılması için bekle
-                    for i in {1..15}; do
-                        nc -z localhost ${APPIUM_PORT} && break
-                        sleep 1
-                    done
-                    echo "Appium server should be ready."
-                """
+                            # Appium server açılması için bekle
+                            for i in {1..15}; do
+                                nc -z localhost ${APPIUM_PORT} && break
+                                sleep 1
+                            done
+                            echo "Appium server should be ready."
+                        """
+                    } catch (err) {
+                        echo "Appium server start failed, continuing pipeline: ${err}"
+                    }
+                }
             }
         }
 
