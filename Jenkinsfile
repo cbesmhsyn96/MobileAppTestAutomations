@@ -39,7 +39,6 @@ pipeline {
             }
         }
 
-        // Appium zaten manuel çalıştırılacak, pipeline'da başlatma kısmı kaldırıldı
         stage('Verify Appium') {
             steps {
                 sh """
@@ -57,22 +56,24 @@ pipeline {
         stage('Build & Test') {
             steps {
                 dir('AndroidProjects/EnuygunAppTest') {
+                    // Testlerin fail olsa da pipeline devam etmesi için -fae kullanıyoruz
                     sh """
-                        mvn clean test
+                        mvn clean test -fae
                     """
                 }
             }
         }
+    }
 
-        stage('Allure Report') {
-            steps {
-                dir('AndroidProjects/EnuygunAppTest') {
-                    allure([
-                        includeProperties: false,
-                        results: [[path: 'target/allure-results']],
-                        reportBuildPolicy: 'ALWAYS'
-                    ])
-                }
+    post {
+        always {
+            dir('AndroidProjects/EnuygunAppTest') {
+                echo "Generating Allure report..."
+                allure([
+                    includeProperties: false,
+                    results: [[path: 'target/allure-results']],
+                    reportBuildPolicy: 'ALWAYS'
+                ])
             }
         }
     }
