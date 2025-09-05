@@ -42,19 +42,21 @@ pipeline {
             steps {
                 sh """
                 # Appium port kontrolü
-                if lsof -i :${APPIUM_PORT} >/dev/null; then
-                    echo "Port ${APPIUM_PORT} already in use, killing existing Appium process..."
-                    lsof -ti :${APPIUM_PORT} | xargs kill -9 || true
+                pids=\$(lsof -ti :${APPIUM_PORT})
+                if [ -n "\$pids" ]; then
+                    echo "Port ${APPIUM_PORT} already in use. Killing: \$pids"
+                    kill -9 \$pids
                 fi
 
                 echo "Starting Appium server..."
-                appium --session-override --port ${APPIUM_PORT} &
+                nohup appium --session-override --port ${APPIUM_PORT} > appium.log 2>&1 &
                 APPIUM_PID=\$!
-                sleep 10  # Appium server'ın başlaması için kısa bekleme
                 echo "Appium server started with PID \$APPIUM_PID on port ${APPIUM_PORT}"
+                sleep 10
                 """
             }
         }
+
 
         stage('Build & Test') {
             steps {
