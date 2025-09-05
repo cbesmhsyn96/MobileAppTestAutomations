@@ -20,6 +20,7 @@ public class Defines {
     protected static HashSet<Runnable> smokeTests = new HashSet<>();
     protected static HashSet<Runnable> regressionTests = new HashSet<>();
     protected static Assertion assertion = new Assertion();
+    protected static String appPackage = "com.mobilatolye.android.enuygun";
 
     /*protected static XCUITestOptions iosOptions
     protected static IOSDriver iosDriver*/

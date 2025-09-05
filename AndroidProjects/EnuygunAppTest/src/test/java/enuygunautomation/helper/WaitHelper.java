@@ -1,16 +1,15 @@
 package enuygunautomation.helper;
 
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import enuygunautomation.helper.*;
 
 import java.time.Duration;
 
 public class WaitHelper extends SwitchByLocatorElement {
-
     protected static void waitAsImplicitly(int second){
         androidDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(second));
     }

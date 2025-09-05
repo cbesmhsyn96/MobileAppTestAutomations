@@ -1,24 +1,24 @@
-package enuygunautomation.tests;
+package enuygunautomation.tests.welcomeslides;
 
 import enuygunautomation.helper.*;
-import enuygunautomation.base.*;
-import enuygunautomation.env.*;
-import enuygunautomation.*;
 
 import jdk.jfr.Description;
-import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.*;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.time.Duration;
 import java.util.*;
 
-public class MainScreen extends WaitHelper{
+import org.testng.annotations.Test;
 
-    public MainScreen() {
-        logger =  LoggerFactory.getLogger(MainScreen.class);
+public class WellcomeSlidesScreen extends WaitHelper{
+
+    public WellcomeSlidesScreen() throws MalformedURLException, URISyntaxException {
+        logger =  LoggerFactory.getLogger(WellcomeSlidesScreen.class);
     }
 
     private void swipeToBiletimGuvende(){
@@ -123,44 +123,45 @@ public class MainScreen extends WaitHelper{
         logger.info("Slide Close butonu görüldü.");
     }
 
-    @Test
+    @Test(priority = 1)
     @Description("Uygulama Açılışında Gelen Slide Bileşenlerinin Görünürlüğünün Kontrolü")
-    public void scenariofirstSlideControll() throws IOException {
+    public void wellcomeSlidesControll() throws IOException {
         tumSeyahatinTekUygulamadaControl();
         biletimGuvendeControll();
         ilkBilenSenOlControll();
     }
 
-    @Test
-    @Disabled
+    @Test(priority = 2)
     @Description("Uygulama Açılışında Son Slide' daki 'Bildirimlere izin ver' Butonu Yönlendirme Kontrolü")
     public void allowNotificationButtonAction() throws IOException, InterruptedException {
+        waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MainPageSlideIntroTitle")));
         swipeToBiletimGuvende();
+        waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MainPageSlideSecondTitle")));
         swipeToIlkBilenSenOl();
-        waitedElementUntilClickable(findElementByKey("MainPageSlideThirdAllowNotifBtn")).click();
+        waitedElementUntilVisible(findElementByKey("MainPageSlideThirdAllowNotifBtn")).click();
         logger.info("Bildirimlere izin ver butonuna tıklandı.");
-        /*
-        Yönlendirme kontrolü
-        Login ekranı açıldığını kontrol
-         */
+        logger.info("Giriş yap ekranına yönleniyor.");
+        Thread.sleep(5000);
+        waitedElementUntilVisible(findElementByKey("MyAccount_LoginSubmitBtn"));
+        assertion.assertEquals(findElementByKey("MyAccount_LoginSubmitBtn").getText(),"Giriş yap");
+        logger.info("Giriş yap ekranı açıldı.");
     }
 
-    @Test
-    @Disabled
+    @Test(priority = 3)
     @Description("Uygulama Açılında Son Slide' daki 'Daha sonra hatırlat' Butonu Yönlendirme Kontrolü")
-    public void remindMeLaterButtonAction() throws IOException {
+    public void remindMeLaterButtonAction() throws IOException, InterruptedException {
+        waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MainPageSlideIntroTitle")));
         swipeToBiletimGuvende();
+        waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MainPageSlideSecondTitle")));
         swipeToIlkBilenSenOl();
-        waitedElementUntilClickable(findElementByKey("MainPageSlideThirdRemindMeBtn")).click();
+        waitedElementUntilClickable(findElementByKey("MainPageSlideThirdRemindMeLaterBtn")).click();
         logger.info("Daha sonra hatırlat butonuna tıklandı.");
-        /*
-        Yönlendirme kontrolü
-        Login ekranı açıldığını kontrol
-         */
+        logger.info("Giriş yap ekranına yönleniyor.");
+        Thread.sleep(5000);
+        waitedElementUntilVisible(findElementByKey("MyAccount_LoginSubmitBtn"));
+        assertion.assertEquals(findElementByKey("MyAccount_LoginSubmitBtn").getText(),"Giriş yap");
+        logger.info("Giriş yap ekranı açıldı.");
     }
-
-
-
 
 
 

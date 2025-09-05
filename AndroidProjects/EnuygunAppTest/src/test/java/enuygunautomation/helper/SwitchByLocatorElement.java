@@ -1,7 +1,7 @@
 package enuygunautomation.helper;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import enuygunautomation.base.*;
+import enuygunautomation.base.BaseTest;
 import io.appium.java_client.AppiumBy;
 import org.openqa.selenium.*;
 import java.io.*;

@@ -10,25 +10,28 @@ import java.net.URI;
 import java.time.Duration;
 
 public class BaseTest extends Defines {
-    @BeforeTest
+    @BeforeMethod
     public void setUpTest(){
         try {
             androidOptions = new UiAutomator2Options()
                     .setPlatformName("Android")
                     .setAutomationName("UiAutomator2")
-                    .setAppPackage("com.mobilatolye.android.enuygun")
+                    .setPlatformVersion("16")
                     .setUdid("emulator-5554")
+                    .setAppPackage(appPackage)
                     .setAppActivity("com.mobilatolye.android.enuygun.features.application.MainActivity")
                     .setSkipUnlock(true)
-                    .setNoReset(false);
+                    .setNoReset(false)
+                    .setAutoGrantPermissions(true);
+
             androidDriver = new AndroidDriver(
                     new URI("http://127.0.0.1:4723").toURL(), androidOptions);
-            wait = new WebDriverWait(androidDriver, Duration.ofSeconds(20));
+            wait = new WebDriverWait(androidDriver, Duration.ofSeconds(30));
         }catch (Exception e){
             e.printStackTrace();
         }
     }
-    @AfterTest
+    @AfterMethod
     public void tearDown(){
         logger.info("Test sonlandı.");
         androidDriver.quit();
