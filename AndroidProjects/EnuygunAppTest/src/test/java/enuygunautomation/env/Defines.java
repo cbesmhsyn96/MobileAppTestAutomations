@@ -12,7 +12,7 @@ import java.util.*;
 
 public class Defines {
     protected static Logger logger;
-    protected static AndroidDriver androidDriver;
+    public static AndroidDriver androidDriver;
     protected static UiAutomator2Options androidOptions;
     protected static final List<File> fileList = List.of(Objects.requireNonNull(new File("src/test/resources/locators").listFiles()));
     protected static ObjectMapper objectMapper = new ObjectMapper();

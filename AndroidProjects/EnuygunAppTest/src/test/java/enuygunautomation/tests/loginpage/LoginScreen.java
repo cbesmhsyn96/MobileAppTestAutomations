@@ -3,14 +3,19 @@ package enuygunautomation.tests.loginpage;
 import com.google.common.collect.ImmutableMap;
 import enuygunautomation.helper.WaitHelper;
 
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import jdk.jfr.Description;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.time.chrono.ThaiBuddhistEra;
-import java.util.Set;
 
+@Story("Kullanıcı login ekranını ve bileşenlerini görebilmeli, butonlara tıkladığında gerekli ekranlara yönlendirilmeli, başarılı ve başarısız login senaryolarını gerçekleştirmeli")
+@Severity(SeverityLevel.CRITICAL)
+@Owner("hakcanswtest")
 public class LoginScreen extends WaitHelper {
     public LoginScreen() {
         logger =  LoggerFactory.getLogger(LoginScreen.class);

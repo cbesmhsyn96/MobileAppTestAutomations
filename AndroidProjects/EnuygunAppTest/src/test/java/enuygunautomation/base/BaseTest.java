@@ -4,6 +4,7 @@ import enuygunautomation.env.Defines;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
 
 import java.net.URI;
@@ -11,7 +12,7 @@ import java.time.Duration;
 
 public class BaseTest extends Defines {
     @BeforeMethod
-    public void setUpTest(){
+    public void setUpTest(ITestContext context){
         try {
             androidOptions = new UiAutomator2Options()
                     .setPlatformName("Android")
@@ -27,6 +28,7 @@ public class BaseTest extends Defines {
             androidDriver = new AndroidDriver(
                     new URI("http://127.0.0.1:4723").toURL(), androidOptions);
             wait = new WebDriverWait(androidDriver, Duration.ofSeconds(30));
+            context.setAttribute("driver", androidDriver);
         }catch (Exception e){
             e.printStackTrace();
         }
