@@ -24,8 +24,12 @@ public class BaseTest extends Defines {
                     .setSkipUnlock(true)
                     .setNoReset(false)
                     .setAutoGrantPermissions(true)
-                    .setAdbExecTimeout(Duration.ofSeconds(60000))
-                    .setNewCommandTimeout(Duration.ofSeconds(300));
+                    .setAdbExecTimeout(Duration.ofMinutes(10))
+                    .setNewCommandTimeout(Duration.ofMinutes(5))
+                    .setUiautomator2ServerLaunchTimeout(Duration.ofSeconds(120)) // Timeout değerini burada verdik
+                    .setAppWaitActivity("*") // Eğer tüm activity’leri kabul etmesini istiyorsan "*"
+                    .setAppWaitPackage(appPackage)
+                    .setSkipDeviceInitialization(true);
 
             androidDriver = new AndroidDriver(
                     new URI("http://127.0.0.1:4723").toURL(), androidOptions);
