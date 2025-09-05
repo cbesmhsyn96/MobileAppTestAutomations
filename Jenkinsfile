@@ -39,13 +39,15 @@ pipeline {
 
 
         stage('Start Appium') {
-            steps {
-                sh '''
-                adb wait-for-device
-                adb shell getprop sys.boot_completed | grep 1
-                '''
-            }
+        steps {
+            sh '''
+            echo "Starting Appium server..."
+            appium --session-override &
+            sleep 10  # Appium server'ın başlaması için kısa bekleme
+            '''
         }
+        }
+
 
         stage('Build & Test') {
             steps {
