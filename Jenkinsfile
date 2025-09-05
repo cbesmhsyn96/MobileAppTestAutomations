@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        ANDROID_HOME = '/Users/<kullanici_adi>/Library/Android/sdk'
+        ANDROID_HOME = '/Users/huseyinakcan/Library/Android/sdk'
         PATH = "/usr/bin:/bin:/usr/sbin:/sbin:${env.ANDROID_HOME}/platform-tools:${env.ANDROID_HOME}/emulator:${env.PATH}"
     }
 
