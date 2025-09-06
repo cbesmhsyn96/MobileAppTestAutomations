@@ -8,7 +8,6 @@ source /Users/huseyinakcan/Desktop/sh_files/mail_env.sh
 BOUNDARY="====MYBOUNDARY===="
 
 ZIP_BASE64=$(base64 -w 0 "$ZIP_PATH")
-DOC_BASE64=$(base64 -w 0 "$DOC_PATH")
 
 EMAIL_CONTENT=$(cat <<EOF
 From: ${MAIL_FROM}
@@ -59,18 +58,10 @@ Content-Transfer-Encoding: base64
 
 $ZIP_BASE64
 
---${BOUNDARY}
-Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
-Content-Disposition: attachment; filename="$(basename $DOC_PATH)"
-Content-Transfer-Encoding: base64
-
-$DOC_BASE64
-
 --${BOUNDARY}--
 EOF
 )
 
-# Maili gönder
 echo "$EMAIL_CONTENT" | curl --url "smtps://smtp.gmail.com:465" \
      --ssl-reqd \
      --mail-from "${MAIL_FROM}" \
