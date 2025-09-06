@@ -75,6 +75,9 @@ pipeline {
                     reportBuildPolicy: 'ALWAYS'
                 ])
             }
+
+            echo "Sending Allure report via email..."
+            sh 'chmod +x ./sendEmail.sh && ./sendEmail.sh'
         }
     }
 }

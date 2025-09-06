@@ -1,0 +1,32 @@
+Subject: Mobile Test Automation Execution Completed
+
+Dear \[Product Owner’s Name],
+
+I would like to inform you that the **mobile test automation suite** has been executed successfully in Jenkins. The automated test run included the following test cases:
+
+[TestCase_1-->UserStory_2] Verification of Opening the Login Screen and Basic Visibility
+[TestCase_2-->UserStory_2] Verification of Form Fields Visibility on the Login Screen
+[TestCase_3-->UserStory_2] Verification of Main Action Buttons Visibility on the Login Screen
+[TestCase_4-->UserStory_2] Verification of Facebook and Google Login Buttons Visibility on the Login Screen
+[TestCase_5-->UserStory_2] Verification of the Password Hide/Show Button Functionality on the Login Screen
+[TestCase_6-->UserStory_2] Verification of the "Continue Without Signing Up" Button Functionality on the Login Screen
+[TestCase_7-->UserStory_2] Verification of the "Forgot Password" Button Functionality on the Login Screen
+[TestCase_8-->UserStory_2] Verification of Successful Login with Email on the Login Screen
+[TestCase_9-->UserStory_2] Verification of Successful Login with Facebook Account on the Login Screen
+[TestCase_10-->UserStory_2] Verification of Successful Login with Google Account on the Login Screen
+[TestCase_11-->UserStory_2] Verification of Warning Messages When Logging in with Empty Email and Password on the Login Screen
+[TestCase_12-->UserStory_2] Verification of Warning Displayed When Logging in with an Invalid Email on the Login Screen
+[TestCase_13-->UserStory_2] Verification of Warning Displayed When Logging in with an Invalid Password on the Login Screen
+...(other cases)
+
+All scenarios were executed using the defined automation framework. Upon completion, an Allure Report has been generated, which provides a detailed overview of the test execution results, including passed and failed cases, execution timeline, and environment details.
+
+This ensures that the application has been validated against the predefined test cases, and any findings are documented in the report.
+
+Allure report is attached to the email.
+
+Please let me know if you would like me to highlight specific results or provide additional insights from the execution.
+
+Best regards,
+Hüseyin Akcan
+QA Engineer
