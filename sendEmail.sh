@@ -9,5 +9,5 @@ curl --url "smtps://smtp.gmail.com:465" \
 --mail-from "${MAIL_FROM}" \
 --mail-rcpt "${MAIL_TO}" \
 --upload-file "${ZIP_PATH}" \
---upload-file "emailBody.txt" \
+--upload-file "emailBody.docx" \
 --user "${MAIL_FROM}:${APP_PASSWORD}"
