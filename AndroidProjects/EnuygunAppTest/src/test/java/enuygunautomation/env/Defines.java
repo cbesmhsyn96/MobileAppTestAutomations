@@ -10,7 +10,7 @@ import org.testng.asserts.Assertion;
 import java.io.File;
 import java.util.*;
 
-public class Defines {
+public class Defines extends EmailAndPasswords{
     protected static Logger logger;
     public static AndroidDriver androidDriver;
     protected static UiAutomator2Options androidOptions;

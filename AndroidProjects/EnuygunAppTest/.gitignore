@@ -1,3 +1,4 @@
+/src/test/java/enuygunautomation/env/EmailAndPasswords.java
 /target/allure-results/
 /target/allure-report/
 !.mvn/wrapper/maven-wrapper.jar

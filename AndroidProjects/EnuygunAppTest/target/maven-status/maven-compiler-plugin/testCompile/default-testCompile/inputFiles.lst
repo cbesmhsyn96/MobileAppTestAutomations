@@ -2,6 +2,7 @@
 /Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/src/test/java/enuygunautomation/base/BaseTest.java
 /Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/src/test/java/enuygunautomation/env/Defines.java
 /Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/src/test/java/enuygunautomation/helper/WaitHelper.java
+/Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/src/test/java/enuygunautomation/env/EmailAndPasswords.java
 /Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/src/test/java/enuygunautomation/tests/loginpage/LoginScreen.java
 /Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/src/test/java/enuygunautomation/helper/SwitchByLocatorElement.java
 /Users/huseyinakcan/Desktop/MobileAppTestAutomations/AndroidProjects/EnuygunAppTest/src/test/java/enuygunautomation/tests/welcomeslides/WellcomeSlidesScreen.java

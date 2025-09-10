@@ -10,8 +10,10 @@
       <class name="enuygunautomation.tests.loginpage.LoginScreen">
         <methods>
           <include name="successLoginWithFacebook"/>
+          <include name="successLoginWithEposta"/>
           <include name="tearDown"/>
           <include name="setUpTest"/>
+          <include name="asd"/>
         </methods>
       </class> <!-- enuygunautomation.tests.loginpage.LoginScreen -->
     </classes>

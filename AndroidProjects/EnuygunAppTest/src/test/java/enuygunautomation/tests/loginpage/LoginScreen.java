@@ -184,12 +184,12 @@ Buton aksiyonları
         logger.info("'Giriş yap' ekranında şifre gizleme butonu kontrol ediliyor.");
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MyAccount_PasswordHidder")));
         logger.info("'Giriş yap' ekranında şifre gizleme butonu görüldü.");
-        logger.info("'Giriş yap' ekranında 'Şifre' alanına 'zorSfr091#' giriliyor.");
-        waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MyAccount_PasswordInput"))).sendKeys("zorSfr091#");
-        logger.info("'Giriş yap' ekranında 'Şifre' alanına 'zorSfr091#' girildi.");
-        logger.info("'Giriş yap' ekranında 'Şifre' alanının 'text' attribute unun value sunun 'zorSfr091#' olduğu kontrol ediliyor.");
-        assertion.assertTrue(findElementByKey("MyAccount_PasswordInput").getAttribute("text").contains("zorSfr091#"));
-        logger.info("'Giriş yap' ekranında 'Şifre' alanının 'text' attribute unun value sunun 'zorSfr091#' olduğu görüldü.");
+        logger.info("'Giriş yap' ekranında 'Şifre' alanına "+validPssword+" giriliyor.");
+        waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MyAccount_PasswordInput"))).sendKeys(validPssword);
+        logger.info("'Giriş yap' ekranında 'Şifre' alanına "+validPssword+" girildi.");
+        logger.info("'Giriş yap' ekranında 'Şifre' alanının 'text' attribute unun value sunun "+validPssword+" olduğu kontrol ediliyor.");
+        assertion.assertTrue(findElementByKey("MyAccount_PasswordInput").getAttribute("text").contains(validPssword));
+        logger.info("'Giriş yap' ekranında 'Şifre' alanının 'text' attribute unun value sunun "+validPssword+" olduğu görüldü.");
         logger.info("'Giriş yap' ekranında 'Şifre' alanının 'password' attribute unun value sunun 'true' olduğu kontrol ediliyor.");
         assertion.assertTrue(findElementByKey("MyAccount_PasswordInput").getAttribute("password").contains("true"));
         logger.info("'Giriş yap' ekranında 'Şifre' alanının 'password' attribute unun value sunun 'true' olduğu görüldü.");
@@ -254,12 +254,12 @@ Buton aksiyonları
         logger.info("'Giriş yap' ekranında 'Şifre' alanı kontrol ediliyor.");
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MyAccount_PasswordInput")));
         logger.info("'Giriş yap' ekranında 'Şifre' alanı görüldü.");
-        logger.info("'E-posta' alanına 'hsynakcn0mobile1test@gmail.com' giriliyor.");
-        findElementByKey("MyAccount_LoginEmailInput").sendKeys("hsynakcn0mobile1test@gmail.com");
-        logger.info("'E-posta' alanına 'hsynakcn0mobile1test@gmail.com' girildi.");
-        logger.info("'Şifre' alanına 'zorSfr091#' giriliyor.");
-        findElementByKey("MyAccount_PasswordInput").sendKeys("zorSfr091#");
-        logger.info("'Şifre' alanına 'zorSfr091#' girildi.");
+        logger.info("'E-posta' alanına "+validEmail+" giriliyor.");
+        findElementByKey("MyAccount_LoginEmailInput").sendKeys(validEmail);
+        logger.info("'E-posta' alanına "+validEmail+" girildi.");
+        logger.info("'Şifre' alanına "+validPssword+" giriliyor.");
+        findElementByKey("MyAccount_PasswordInput").sendKeys(validPssword);
+        logger.info("'Şifre' alanına "+validPssword+" girildi.");
         logger.info("'Giriş yap'(submit) butonuna tıklanıyor.");
         findElementByKey("MyAccount_LoginSubmitBtn").click();
         logger.info("'Giriş yap'(submit) butonuna tıklandı.");
@@ -269,10 +269,10 @@ Buton aksiyonları
         logger.info("Hesabım menüsüne gidiliyor.");
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("HomeScreen_Hesabim_Tab"))).click();
         logger.info("Hesabım menüsüne gidildi.");
-        logger.info("Hesabım menüsünde 'hsynakcn0mobile1test@gmail.com' e-postası kontrol ediliyor.");
+        logger.info("Hesabım menüsünde "+validEmail+" e-postası kontrol ediliyor.");
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MyAccountMenu_EmailText")));
-        assertion.assertTrue(findElementByKey("MyAccountMenu_EmailText").getText().contains("hsynakcn0mobile1test@gmail.com"));
-        logger.info("Hesabım menüsünde 'hsynakcn0mobile1test@gmail.com' e-postası olduğu doğrulandı.");
+        assertion.assertTrue(findElementByKey("MyAccountMenu_EmailText").getText().contains(validEmail));
+        logger.info("Hesabım menüsünde "+validEmail+" e-postası olduğu doğrulandı.");
     }
 
     @Test(priority = 9)
@@ -304,15 +304,15 @@ Buton aksiyonları
         logger.info("Facebook login ekranının açılması bekleniyor.");
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("FacebookLoginPage_EmailTextBox")));
         logger.info("Facebook login ekranı açıldı.");
-        logger.info("Email alanına 'mobile.test.hsw@gmail.com' giriliyor.");
+        logger.info("Email alanına "+validFaceBookEmail+" giriliyor.");
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("FacebookLoginPage_EmailTextBox"))).click();
-        findElementByKey("FacebookLoginPage_EmailTextBox").sendKeys("mobile.test.hsw@gmail.com");
-        assertion.assertTrue(findElementByKey("FacebookLoginPage_EmailTextBox").getText().equals("mobile.test.hsw@gmail.com"));
-        logger.info("Email alanında 'mobile.test.hsw@gmail.com' görüldü.");
-        logger.info("Password alanına 'zorSfr091#' giriliyor.");
-        findElementByKey("FacebookLoginPage_PasswordTextBox").sendKeys("zorSfr091#");
-        assertion.assertTrue(findElementByKey("FacebookLoginPage_PasswordTextBox").getAttribute("text").equals("zorSfr091#"));
-        logger.info("Password alanında 'zorSfr091#' görüldü.");
+        findElementByKey("FacebookLoginPage_EmailTextBox").sendKeys(validFaceBookEmail);
+        assertion.assertTrue(findElementByKey("FacebookLoginPage_EmailTextBox").getText().equals(validFaceBookEmail));
+        logger.info("Email alanında "+validFaceBookEmail+" görüldü.");
+        logger.info("Password alanına "+validPssword+" giriliyor.");
+        findElementByKey("FacebookLoginPage_PasswordTextBox").sendKeys(validPssword);
+        assertion.assertTrue(findElementByKey("FacebookLoginPage_PasswordTextBox").getAttribute("text").equals(validPssword));
+        logger.info("Password alanında "+validPssword+" görüldü.");
         logger.info("'Log in' butonuna tıklanıyor.");
         findElementByKey("FacebookLoginPage_LoginButton").click();
         logger.info("'Log in' butonuna tıklandı.");
@@ -320,9 +320,9 @@ Buton aksiyonları
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("HomeScreen_Hesabim_Tab"))).click();
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MyAccountMenu_EmailText")));
         logger.info("'Hesabım menüsüne gidildi.'");
-        logger.info("Hesabım menüsünde Facebook ile girişte kullanılan 'mobile.test.hsw@gmail.com' e-postası kontrol ediliyor.");
-        assertion.assertTrue(findElementByKey("MyAccountMenu_EmailText").getText().equals("mobile.test.hsw@gmail.com"));
-        logger.info("Hesabım menüsünde Facebook ile girişte kullanılan 'mobile.test.hsw@gmail.com' e-postası görüldü.");
+        logger.info("Hesabım menüsünde Facebook ile girişte kullanılan "+validFaceBookEmail+" e-postası kontrol ediliyor.");
+        assertion.assertTrue(findElementByKey("MyAccountMenu_EmailText").getText().equals(validFaceBookEmail));
+        logger.info("Hesabım menüsünde Facebook ile girişte kullanılan "+validFaceBookEmail+" e-postası görüldü.");
     }
 
     @Test(priority = 16)
@@ -345,16 +345,16 @@ Buton aksiyonları
         logger.info("'Choose an account' pop-up' ının açılması bekleniyor.");
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MyAccount_LoginWithGoogle_AppIcon")));
         logger.info("'Choose an account' pop-up' ı açıldı.");
-        logger.info("'Choose an account' pop-up' ında 'hsynakcn0mobile1test@gmail.com' hesabı seçiliyor.");
+        logger.info("'Choose an account' pop-up' ında "+validEmail+" hesabı seçiliyor.");
         findElementByKey("MyAccount_LoginWithGoogle_AccountOptFirst").click();
-        logger.info("'Choose an account' pop-up' ında 'hsynakcn0mobile1test@gmail.com' hesabı seçildi.");
+        logger.info("'Choose an account' pop-up' ında "+validEmail+" hesabı seçildi.");
         logger.info("'Hesabım menüsüne gidiliyor.'");
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("HomeScreen_Hesabim_Tab"))).click();
         waitedElementUntilPresencable(getBy(getFoundedFileContainsKey("MyAccountMenu_EmailText")));
         logger.info("'Hesabım menüsüne gidildi.'");
-        logger.info("Hesabım menüsünde Google hesabı seçilen 'hsynakcn0mobile1test@gmail.com' e-postası kontrol ediliyor.");
-        assertion.assertTrue(findElementByKey("MyAccountMenu_EmailText").getText().equals("hsynakcn0mobile1test@gmail.com"));
-        logger.info("Hesabım menüsünde Google hesabı seçilen 'hsynakcn0mobile1test@gmail.com' e-postası görüldü.");
+        logger.info("Hesabım menüsünde Google hesabı seçilen "+validEmail+" e-postası kontrol ediliyor.");
+        assertion.assertTrue(findElementByKey("MyAccountMenu_EmailText").getText().equals(validEmail));
+        logger.info("Hesabım menüsünde Google hesabı seçilen "+validEmail+" e-postası görüldü.");
     }
 
     @Test(priority = 11)

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
+                    <span class="method-stats">18 methods, 3 failed,   15 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="enuygunautomation.tests.loginpage.LoginScreen" class="method navigator-link" hash-for-method="asd">asd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="enuygunautomation.tests.loginpage.LoginScreen" class="method navigator-link" hash-for-method="successLoginWithEposta">successLoginWithEposta</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="enuygunautomation.tests.loginpage.LoginScreen" class="method navigator-link" hash-for-method="successLoginWithFacebook">successLoginWithFacebook</a> <!-- method navigator-link -->
@@ -118,11 +128,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen" class="method navigator-link" hash-for-method="allowNotificationButtonAction">allowNotificationButtonAction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="enuygunautomation.tests.loginpage.LoginScreen" class="method navigator-link" hash-for-method="asd">asd</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -177,11 +182,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="enuygunautomation.tests.loginpage.LoginScreen" class="method navigator-link" hash-for-method="successLoginWithEposta">successLoginWithEposta</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="enuygunautomation.tests.loginpage.LoginScreen" class="method navigator-link" hash-for-method="successLoginWithGoogle">successLoginWithGoogle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -220,23 +220,49 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="successLoginWithFacebook">
-                  </a> <!-- successLoginWithFacebook -->
-                  <span class="method-name">successLoginWithFacebook</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: com.android.chrome:id/ack_button (tried for 30 second(s) with 500 milliseconds interval)
+                  <a name="asd">
+                  </a> <!-- asd -->
+                  <span class="method-name">asd</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Potentially insecure feature &apos;adb_shell&apos; has not been enabled. If you want to enable this feature and accept the security ramifications, please do so by following the documented instructions at http://appium.io/docs/en/latest/guides/security/
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6&apos;, java.version: &apos;22.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c05b6eec-c262-460c-909d-aaeb57b3469f, executeScript {script=mobile: shell, args=[{command=pm clear com.mobilatolye.android.enuygun}]}]
+Capabilities {appium:adbExecTimeout: 600000, appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:appWaitActivity: *, appium:appWaitPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 600000, appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., appWaitActivity: *, appWaitPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 16, skipDeviceInitialization: true, skipUnlock: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 120000}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipDeviceInitialization: true, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c05b6eec-c262-460c-909d-aaeb57b3469f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
+	at enuygunautomation.tests.loginpage.LoginScreen.resetAppWithCleanFacebookLogin(LoginScreen.java:26)
+	at enuygunautomation.tests.loginpage.LoginScreen.asd(LoginScreen.java:532)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successLoginWithEposta">
+                  </a> <!-- successLoginWithEposta -->
+                  <span class="method-name">successLoginWithEposta</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: com.mobilatolye.android.enuygun:id/image_search_fragment_logo (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at enuygunautomation.helper.WaitHelper.waitedElementUntilPresencable(WaitHelper.java:18)
-	at enuygunautomation.tests.loginpage.LoginScreen.successLoginWithFacebook(LoginScreen.java:298)
+	at enuygunautomation.tests.loginpage.LoginScreen.successLoginWithEposta(LoginScreen.java:267)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6&apos;, java.version: &apos;22.0.1&apos;
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [843d9ce4-cea4-4cf3-8066-683f0cbdadb2, findElement {using=id, value=com.android.chrome:id/ack_button}]
-Capabilities {appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, noReset: false, platformName: ANDROID, platformVersion: 16, skipUnlock: true, udid: emulator-5554}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 843d9ce4-cea4-4cf3-8066-683f0cbdadb2
+Command: [3e0d14c6-6d3e-4e65-9d22-a5e69a8d9ff3, findElement {using=id, value=com.mobilatolye.android.enuygun:id/image_search_fragment_logo}]
+Capabilities {appium:adbExecTimeout: 600000, appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:appWaitActivity: *, appium:appWaitPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 600000, appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., appWaitActivity: *, appWaitPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 16, skipDeviceInitialization: true, skipUnlock: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 120000}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipDeviceInitialization: true, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3e0d14c6-6d3e-4e65-9d22-a5e69a8d9ff3
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -251,6 +277,32 @@ Session ID: 843d9ce4-cea4-4cf3-8066-683f0cbdadb2
 	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 	... 32 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successLoginWithFacebook">
+                  </a> <!-- successLoginWithFacebook -->
+                  <span class="method-name">successLoginWithFacebook</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Potentially insecure feature &apos;adb_shell&apos; has not been enabled. If you want to enable this feature and accept the security ramifications, please do so by following the documented instructions at http://appium.io/docs/en/latest/guides/security/
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6&apos;, java.version: &apos;22.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [6bab8f6a-4fac-40c3-9988-a9ab90033363, executeScript {script=mobile: shell, args=[{command=pm clear com.mobilatolye.android.enuygun}]}]
+Capabilities {appium:adbExecTimeout: 600000, appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:appWaitActivity: *, appium:appWaitPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 600000, appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., appWaitActivity: *, appWaitPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 16, skipDeviceInitialization: true, skipUnlock: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 120000}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipDeviceInitialization: true, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6bab8f6a-4fac-40c3-9988-a9ab90033363
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
+	at enuygunautomation.tests.loginpage.LoginScreen.resetAppWithCleanFacebookLogin(LoginScreen.java:26)
+	at enuygunautomation.tests.loginpage.LoginScreen.successLoginWithFacebook(LoginScreen.java:281)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -292,13 +344,6 @@ Session ID: 843d9ce4-cea4-4cf3-8066-683f0cbdadb2
               <span class="class-name">enuygunautomation.tests.loginpage.LoginScreen</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="asd">
-                  </a> <!-- asd -->
-                  <span class="method-name">asd</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="emptyEmailAndPasswordWarnings">
@@ -360,13 +405,6 @@ Session ID: 843d9ce4-cea4-4cf3-8066-683f0cbdadb2
                   <a name="sifremiUnuttumButtonFunctionControl">
                   </a> <!-- sifremiUnuttumButtonFunctionControl -->
                   <span class="method-name">sifremiUnuttumButtonFunctionControl</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="successLoginWithEposta">
-                  </a> <!-- successLoginWithEposta -->
-                  <span class="method-name">successLoginWithEposta</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -451,82 +489,82 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'successLoginWithFacebook')
+data.setCell(0, 1, 'successLoginWithEposta')
 data.setCell(0, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(0, 3, 40087);
+data.setCell(0, 3, 38166);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'asd')
-data.setCell(1, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(1, 3, 20143);
+data.setCell(1, 1, 'remindMeLaterButtonAction')
+data.setCell(1, 2, 'enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen')
+data.setCell(1, 3, 14374);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'successLoginWithGoogle')
 data.setCell(2, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(2, 3, 18047);
+data.setCell(2, 3, 14344);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'remindMeLaterButtonAction')
+data.setCell(3, 1, 'allowNotificationButtonAction')
 data.setCell(3, 2, 'enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen')
-data.setCell(3, 3, 15998);
+data.setCell(3, 3, 13742);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'successLoginWithEposta')
+data.setCell(4, 1, 'invalidEmailAndPasswordWarnings')
 data.setCell(4, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(4, 3, 15676);
+data.setCell(4, 3, 10336);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'allowNotificationButtonAction')
-data.setCell(5, 2, 'enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen')
-data.setCell(5, 3, 14145);
+data.setCell(5, 1, 'uyeOlmdnDevamEtButtonFunctionControl')
+data.setCell(5, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
+data.setCell(5, 3, 10042);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'uyeOlmdnDevamEtButtonFunctionControl')
-data.setCell(6, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(6, 3, 12690);
+data.setCell(6, 1, 'wellcomeSlidesControll')
+data.setCell(6, 2, 'enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen')
+data.setCell(6, 3, 9308);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'passwordHidderButtonFunctionControl')
+data.setCell(7, 1, 'invalidEmailWarningMessage')
 data.setCell(7, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(7, 3, 11214);
+data.setCell(7, 3, 8556);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'wellcomeSlidesControll')
-data.setCell(8, 2, 'enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen')
-data.setCell(8, 3, 10640);
+data.setCell(8, 1, 'invalidPasswordWarningMessage')
+data.setCell(8, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
+data.setCell(8, 3, 8217);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'invalidEmailAndPasswordWarnings')
+data.setCell(9, 1, 'passwordHidderButtonFunctionControl')
 data.setCell(9, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(9, 3, 10477);
+data.setCell(9, 3, 8164);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'firstPartOfLoginSceeenControl')
+data.setCell(10, 1, 'emptyEmailAndPasswordWarnings')
 data.setCell(10, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(10, 3, 9883);
+data.setCell(10, 3, 8080);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'thirdPartOfLoginSceeenControl')
+data.setCell(11, 1, 'sifremiUnuttumButtonFunctionControl')
 data.setCell(11, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(11, 3, 9171);
+data.setCell(11, 3, 7224);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'sifremiUnuttumButtonFunctionControl')
+data.setCell(12, 1, 'secondPartOfLoginSceeenControl')
 data.setCell(12, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(12, 3, 9145);
+data.setCell(12, 3, 6549);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'invalidEmailWarningMessage')
+data.setCell(13, 1, 'firstPartOfLoginSceeenControl')
 data.setCell(13, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(13, 3, 9140);
+data.setCell(13, 3, 6526);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'emptyEmailAndPasswordWarnings')
+data.setCell(14, 1, 'thirdPartOfLoginSceeenControl')
 data.setCell(14, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(14, 3, 8703);
+data.setCell(14, 3, 6049);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'invalidPasswordWarningMessage')
+data.setCell(15, 1, 'fourthPartOfLoginSceeenControl')
 data.setCell(15, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(15, 3, 8504);
+data.setCell(15, 3, 5923);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'secondPartOfLoginSceeenControl')
+data.setCell(16, 1, 'successLoginWithFacebook')
 data.setCell(16, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(16, 3, 8244);
+data.setCell(16, 3, 48);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'fourthPartOfLoginSceeenControl')
+data.setCell(17, 1, 'asd')
 data.setCell(17, 2, 'enuygunautomation.tests.loginpage.LoginScreen')
-data.setCell(17, 3, 8161);
+data.setCell(17, 3, 18);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -554,225 +592,229 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">enuygunautomation.tests.loginpage.LoginScreen</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">firstPartOfLoginSceeenControl</span>
-                <span class="method-start">15318 ms</span>
+                <span class="method-start">7432 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25235 ms</span>
+                <span class="method-start">13978 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">26140 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">14504 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">secondPartOfLoginSceeenControl</span>
-                <span class="method-start">34729 ms</span>
+                <span class="method-start">17395 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43001 ms</span>
+                <span class="method-start">23947 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">45144 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">24360 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">thirdPartOfLoginSceeenControl</span>
-                <span class="method-start">56177 ms</span>
+                <span class="method-start">27363 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">65362 ms</span>
+                <span class="method-start">33417 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">66201 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">33831 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">fourthPartOfLoginSceeenControl</span>
-                <span class="method-start">74378 ms</span>
+                <span class="method-start">36336 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">82828 ms</span>
+                <span class="method-start">42264 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">84416 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">42802 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">passwordHidderButtonFunctionControl</span>
-                <span class="method-start">96230 ms</span>
+                <span class="method-start">46248 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">107468 ms</span>
+                <span class="method-start">54419 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">108669 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">54881 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">uyeOlmdnDevamEtButtonFunctionControl</span>
-                <span class="method-start">116200 ms</span>
+                <span class="method-start">57817 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">128929 ms</span>
+                <span class="method-start">67863 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">130269 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">68369 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">sifremiUnuttumButtonFunctionControl</span>
-                <span class="method-start">136843 ms</span>
+                <span class="method-start">71459 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">145999 ms</span>
+                <span class="method-start">78692 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">146555 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">79180 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">successLoginWithEposta</span>
-                <span class="method-start">151837 ms</span>
+                <span class="method-start">83370 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">167523 ms</span>
+                <span class="method-start">121870 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">168174 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">122337 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">successLoginWithFacebook</span>
-                <span class="method-start">173385 ms</span>
+                <span class="method-start">125691 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">214113 ms</span>
+                <span class="method-start">126046 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">215054 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">126505 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyEmailAndPasswordWarnings</span>
-                <span class="method-start">222584 ms</span>
+                <span class="method-start">129328 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">231339 ms</span>
+                <span class="method-start">137412 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">232180 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">137954 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmailWarningMessage</span>
-                <span class="method-start">238324 ms</span>
+                <span class="method-start">141096 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">247469 ms</span>
+                <span class="method-start">149657 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">248033 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">150025 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidPasswordWarningMessage</span>
-                <span class="method-start">253388 ms</span>
+                <span class="method-start">152572 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">261903 ms</span>
+                <span class="method-start">160796 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">262503 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">161154 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmailAndPasswordWarnings</span>
-                <span class="method-start">268043 ms</span>
+                <span class="method-start">163644 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">278526 ms</span>
+                <span class="method-start">173991 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">279236 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">174328 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">asd</span>
-                <span class="method-start">284958 ms</span>
+                <span class="method-start">176891 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">305112 ms</span>
+                <span class="method-start">177141 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">305749 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">177617 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">successLoginWithGoogle</span>
-                <span class="method-start">312548 ms</span>
+                <span class="method-start">181241 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">330601 ms</span>
+                <span class="method-start">195590 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">331662 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">196082 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">wellcomeSlidesControll</span>
-                <span class="method-start">339396 ms</span>
+                <span class="method-start">199405 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">350059 ms</span>
+                <span class="method-start">208716 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">351854 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">209946 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">allowNotificationButtonAction</span>
-                <span class="method-start">359970 ms</span>
+                <span class="method-start">212973 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">374144 ms</span>
+                <span class="method-start">226721 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUpTest(org.testng.TestRunner@2c668c2a)</span>
-                <span class="method-start">375605 ms</span>
+                <span class="method-name">setUpTest(org.testng.TestRunner@6afeaf2d)</span>
+                <span class="method-start">227246 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">remindMeLaterButtonAction</span>
-                <span class="method-start">382415 ms</span>
+                <span class="method-start">230785 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">398434 ms</span>
+                <span class="method-start">245164 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

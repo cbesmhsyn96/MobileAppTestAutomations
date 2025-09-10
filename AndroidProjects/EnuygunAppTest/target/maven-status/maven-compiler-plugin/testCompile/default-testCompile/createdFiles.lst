@@ -4,6 +4,7 @@ enuygunautomation/env/Defines.class
 enuygunautomation/helper/DeserialLocatorFiles.class
 enuygunautomation/helper/SwitchByLocatorElement$1.class
 enuygunautomation/tests/welcomeslides/WellcomeSlidesScreen.class
+enuygunautomation/env/EmailAndPasswords.class
 enuygunautomation/helper/AllureAttachmentListener.class
 enuygunautomation/helper/SwitchByLocatorElement.class
 enuygunautomation/helper/WaitHelper.class

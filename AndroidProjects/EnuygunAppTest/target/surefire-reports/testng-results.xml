@@ -1,245 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+<testng-results ignored="0" total="18" passed="15" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-05T22:14:19 TRT" name="Suite" finished-at="2025-09-05T22:20:59 TRT" duration-ms="399747">
+  <suite started-at="2025-09-10T11:19:37 TRT" name="Suite" finished-at="2025-09-10T11:23:43 TRT" duration-ms="245696">
     <groups>
     </groups>
-    <test started-at="2025-09-05T22:14:19 TRT" name="Tests" finished-at="2025-09-05T22:20:59 TRT" duration-ms="399747">
+    <test started-at="2025-09-10T11:19:37 TRT" name="Tests" finished-at="2025-09-10T11:23:43 TRT" duration-ms="245696">
       <class name="enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen">
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@3e2822]" started-at="2025-09-05T22:19:51 TRT" name="setUpTest" finished-at="2025-09-05T22:19:59 TRT" duration-ms="7731" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@79e18e38]" started-at="2025-09-10T11:22:53 TRT" name="setUpTest" finished-at="2025-09-10T11:22:57 TRT" duration-ms="3321" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="wellcomeSlidesControll()[pri:1, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@3e2822]" started-at="2025-09-05T22:19:59 TRT" name="wellcomeSlidesControll" finished-at="2025-09-05T22:20:10 TRT" duration-ms="10640" status="PASS">
+        <test-method signature="wellcomeSlidesControll()[pri:1, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@79e18e38]" started-at="2025-09-10T11:22:57 TRT" name="wellcomeSlidesControll" finished-at="2025-09-10T11:23:06 TRT" duration-ms="9308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wellcomeSlidesControll -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@3e2822]" started-at="2025-09-05T22:20:10 TRT" name="tearDown" finished-at="2025-09-05T22:20:11 TRT" duration-ms="1782" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@79e18e38]" started-at="2025-09-10T11:23:06 TRT" name="tearDown" finished-at="2025-09-10T11:23:07 TRT" duration-ms="1220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@3e2822]" started-at="2025-09-05T22:20:11 TRT" name="setUpTest" finished-at="2025-09-05T22:20:19 TRT" duration-ms="8111" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@79e18e38]" started-at="2025-09-10T11:23:07 TRT" name="setUpTest" finished-at="2025-09-10T11:23:10 TRT" duration-ms="3022" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="allowNotificationButtonAction()[pri:2, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@3e2822]" started-at="2025-09-05T22:20:19 TRT" name="allowNotificationButtonAction" finished-at="2025-09-05T22:20:34 TRT" duration-ms="14145" status="PASS">
+        <test-method signature="allowNotificationButtonAction()[pri:2, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@79e18e38]" started-at="2025-09-10T11:23:10 TRT" name="allowNotificationButtonAction" finished-at="2025-09-10T11:23:24 TRT" duration-ms="13742" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allowNotificationButtonAction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@3e2822]" started-at="2025-09-05T22:20:34 TRT" name="tearDown" finished-at="2025-09-05T22:20:35 TRT" duration-ms="1442" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@79e18e38]" started-at="2025-09-10T11:23:24 TRT" name="tearDown" finished-at="2025-09-10T11:23:25 TRT" duration-ms="520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@3e2822]" started-at="2025-09-05T22:20:35 TRT" name="setUpTest" finished-at="2025-09-05T22:20:42 TRT" duration-ms="6804" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@79e18e38]" started-at="2025-09-10T11:23:25 TRT" name="setUpTest" finished-at="2025-09-10T11:23:28 TRT" duration-ms="3534" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="remindMeLaterButtonAction()[pri:3, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@3e2822]" started-at="2025-09-05T22:20:42 TRT" name="remindMeLaterButtonAction" finished-at="2025-09-05T22:20:58 TRT" duration-ms="15998" status="PASS">
+        <test-method signature="remindMeLaterButtonAction()[pri:3, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@79e18e38]" started-at="2025-09-10T11:23:28 TRT" name="remindMeLaterButtonAction" finished-at="2025-09-10T11:23:42 TRT" duration-ms="14374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- remindMeLaterButtonAction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@3e2822]" started-at="2025-09-05T22:20:58 TRT" name="tearDown" finished-at="2025-09-05T22:20:59 TRT" duration-ms="1285" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen@79e18e38]" started-at="2025-09-10T11:23:42 TRT" name="tearDown" finished-at="2025-09-10T11:23:43 TRT" duration-ms="517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- enuygunautomation.tests.welcomeslides.WellcomeSlidesScreen -->
       <class name="enuygunautomation.tests.loginpage.LoginScreen">
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:14:19 TRT" name="setUpTest" finished-at="2025-09-05T22:14:35 TRT" duration-ms="15214" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:19:37 TRT" name="setUpTest" finished-at="2025-09-10T11:19:45 TRT" duration-ms="7382" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="firstPartOfLoginSceeenControl()[pri:1, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:14:35 TRT" name="firstPartOfLoginSceeenControl" finished-at="2025-09-05T22:14:45 TRT" duration-ms="9883" status="PASS">
+        <test-method signature="firstPartOfLoginSceeenControl()[pri:1, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:19:45 TRT" name="firstPartOfLoginSceeenControl" finished-at="2025-09-10T11:19:51 TRT" duration-ms="6526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- firstPartOfLoginSceeenControl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:14:45 TRT" name="tearDown" finished-at="2025-09-05T22:14:46 TRT" duration-ms="892" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:19:51 TRT" name="tearDown" finished-at="2025-09-10T11:19:52 TRT" duration-ms="514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:14:46 TRT" name="setUpTest" finished-at="2025-09-05T22:14:54 TRT" duration-ms="8584" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:19:52 TRT" name="setUpTest" finished-at="2025-09-10T11:19:55 TRT" duration-ms="2888" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="secondPartOfLoginSceeenControl()[pri:2, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:14:54 TRT" name="secondPartOfLoginSceeenControl" finished-at="2025-09-05T22:15:02 TRT" duration-ms="8244" status="PASS">
+        <test-method signature="secondPartOfLoginSceeenControl()[pri:2, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:19:55 TRT" name="secondPartOfLoginSceeenControl" finished-at="2025-09-10T11:20:01 TRT" duration-ms="6549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- secondPartOfLoginSceeenControl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:15:02 TRT" name="tearDown" finished-at="2025-09-05T22:15:05 TRT" duration-ms="2094" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:01 TRT" name="tearDown" finished-at="2025-09-10T11:20:02 TRT" duration-ms="407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:15:05 TRT" name="setUpTest" finished-at="2025-09-05T22:15:16 TRT" duration-ms="11025" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:02 TRT" name="setUpTest" finished-at="2025-09-10T11:20:05 TRT" duration-ms="2996" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="thirdPartOfLoginSceeenControl()[pri:3, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:15:16 TRT" name="thirdPartOfLoginSceeenControl" finished-at="2025-09-05T22:15:25 TRT" duration-ms="9171" status="PASS">
+        <test-method signature="thirdPartOfLoginSceeenControl()[pri:3, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:05 TRT" name="thirdPartOfLoginSceeenControl" finished-at="2025-09-10T11:20:11 TRT" duration-ms="6049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thirdPartOfLoginSceeenControl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:15:25 TRT" name="tearDown" finished-at="2025-09-05T22:15:26 TRT" duration-ms="823" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:11 TRT" name="tearDown" finished-at="2025-09-10T11:20:11 TRT" duration-ms="405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:15:26 TRT" name="setUpTest" finished-at="2025-09-05T22:15:34 TRT" duration-ms="8167" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:11 TRT" name="setUpTest" finished-at="2025-09-10T11:20:14 TRT" duration-ms="2500" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="fourthPartOfLoginSceeenControl()[pri:4, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:15:34 TRT" name="fourthPartOfLoginSceeenControl" finished-at="2025-09-05T22:15:42 TRT" duration-ms="8161" status="PASS">
+        <test-method signature="fourthPartOfLoginSceeenControl()[pri:4, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:14 TRT" name="fourthPartOfLoginSceeenControl" finished-at="2025-09-10T11:20:20 TRT" duration-ms="5923" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fourthPartOfLoginSceeenControl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:15:42 TRT" name="tearDown" finished-at="2025-09-05T22:15:44 TRT" duration-ms="1574" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:20 TRT" name="tearDown" finished-at="2025-09-10T11:20:20 TRT" duration-ms="531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:15:44 TRT" name="setUpTest" finished-at="2025-09-05T22:15:56 TRT" duration-ms="11811" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:20 TRT" name="setUpTest" finished-at="2025-09-10T11:20:24 TRT" duration-ms="3444" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="passwordHidderButtonFunctionControl()[pri:5, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:15:56 TRT" name="passwordHidderButtonFunctionControl" finished-at="2025-09-05T22:16:07 TRT" duration-ms="11214" status="PASS">
+        <test-method signature="passwordHidderButtonFunctionControl()[pri:5, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:24 TRT" name="passwordHidderButtonFunctionControl" finished-at="2025-09-10T11:20:32 TRT" duration-ms="8164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- passwordHidderButtonFunctionControl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:16:07 TRT" name="tearDown" finished-at="2025-09-05T22:16:08 TRT" duration-ms="1190" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:32 TRT" name="tearDown" finished-at="2025-09-10T11:20:32 TRT" duration-ms="451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:16:08 TRT" name="setUpTest" finished-at="2025-09-05T22:16:16 TRT" duration-ms="7526" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:32 TRT" name="setUpTest" finished-at="2025-09-10T11:20:35 TRT" duration-ms="2932" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="uyeOlmdnDevamEtButtonFunctionControl()[pri:6, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:16:16 TRT" name="uyeOlmdnDevamEtButtonFunctionControl" finished-at="2025-09-05T22:16:28 TRT" duration-ms="12690" status="PASS">
+        <test-method signature="uyeOlmdnDevamEtButtonFunctionControl()[pri:6, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:35 TRT" name="uyeOlmdnDevamEtButtonFunctionControl" finished-at="2025-09-10T11:20:45 TRT" duration-ms="10042" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uyeOlmdnDevamEtButtonFunctionControl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:16:28 TRT" name="tearDown" finished-at="2025-09-05T22:16:30 TRT" duration-ms="1335" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:45 TRT" name="tearDown" finished-at="2025-09-10T11:20:46 TRT" duration-ms="502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:16:30 TRT" name="setUpTest" finished-at="2025-09-05T22:16:36 TRT" duration-ms="6569" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:46 TRT" name="setUpTest" finished-at="2025-09-10T11:20:49 TRT" duration-ms="3087" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="sifremiUnuttumButtonFunctionControl()[pri:7, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:16:36 TRT" name="sifremiUnuttumButtonFunctionControl" finished-at="2025-09-05T22:16:45 TRT" duration-ms="9145" status="PASS">
+        <test-method signature="sifremiUnuttumButtonFunctionControl()[pri:7, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:49 TRT" name="sifremiUnuttumButtonFunctionControl" finished-at="2025-09-10T11:20:56 TRT" duration-ms="7224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sifremiUnuttumButtonFunctionControl -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:16:45 TRT" name="tearDown" finished-at="2025-09-05T22:16:46 TRT" duration-ms="552" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:56 TRT" name="tearDown" finished-at="2025-09-10T11:20:57 TRT" duration-ms="475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:16:46 TRT" name="setUpTest" finished-at="2025-09-05T22:16:51 TRT" duration-ms="5244" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:20:57 TRT" name="setUpTest" finished-at="2025-09-10T11:21:01 TRT" duration-ms="4186" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="successLoginWithEposta()[pri:8, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:16:51 TRT" name="successLoginWithEposta" finished-at="2025-09-05T22:17:07 TRT" duration-ms="15676" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successLoginWithEposta -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:17:07 TRT" name="tearDown" finished-at="2025-09-05T22:17:08 TRT" duration-ms="647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:17:08 TRT" name="setUpTest" finished-at="2025-09-05T22:17:13 TRT" duration-ms="5206" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method signature="successLoginWithFacebook()[pri:9, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:17:13 TRT" name="successLoginWithFacebook" finished-at="2025-09-05T22:17:53 TRT" duration-ms="40087" status="FAIL">
+        <test-method signature="successLoginWithEposta()[pri:8, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:01 TRT" name="successLoginWithEposta" finished-at="2025-09-10T11:21:39 TRT" duration-ms="38166" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: com.android.chrome:id/ack_button (tried for 30 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: com.mobilatolye.android.enuygun:id/image_search_fragment_logo (tried for 30 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: com.android.chrome:id/ack_button (tried for 30 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: com.mobilatolye.android.enuygun:id/image_search_fragment_logo (tried for 30 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at enuygunautomation.helper.WaitHelper.waitedElementUntilPresencable(WaitHelper.java:18)
-at enuygunautomation.tests.loginpage.LoginScreen.successLoginWithFacebook(LoginScreen.java:298)
+at enuygunautomation.tests.loginpage.LoginScreen.successLoginWithEposta(LoginScreen.java:267)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -275,9 +256,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.34.0', revision: '707dcb4246*'
 System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [843d9ce4-cea4-4cf3-8066-683f0cbdadb2, findElement {using=id, value=com.android.chrome:id/ack_button}]
-Capabilities {appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, noReset: false, platformName: ANDROID, platformVersion: 16, skipUnlock: true, udid: emulator-5554}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 843d9ce4-cea4-4cf3-8066-683f0cbdadb2
+Command: [3e0d14c6-6d3e-4e65-9d22-a5e69a8d9ff3, findElement {using=id, value=com.mobilatolye.android.enuygun:id/image_search_fragment_logo}]
+Capabilities {appium:adbExecTimeout: 600000, appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:appWaitActivity: *, appium:appWaitPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 600000, appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., appWaitActivity: *, appWaitPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 16, skipDeviceInitialization: true, skipUnlock: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 120000}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipDeviceInitialization: true, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 3e0d14c6-6d3e-4e65-9d22-a5e69a8d9ff3
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -300,122 +281,267 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- successLoginWithFacebook -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:17:54 TRT" name="tearDown" finished-at="2025-09-05T22:17:55 TRT" duration-ms="930" status="PASS">
+        </test-method> <!-- successLoginWithEposta -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:39 TRT" name="tearDown" finished-at="2025-09-10T11:21:40 TRT" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:17:55 TRT" name="setUpTest" finished-at="2025-09-05T22:18:02 TRT" duration-ms="7522" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:40 TRT" name="setUpTest" finished-at="2025-09-10T11:21:43 TRT" duration-ms="3351" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="emptyEmailAndPasswordWarnings()[pri:11, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:02 TRT" name="emptyEmailAndPasswordWarnings" finished-at="2025-09-05T22:18:11 TRT" duration-ms="8703" status="PASS">
+        <test-method signature="successLoginWithFacebook()[pri:9, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:43 TRT" name="successLoginWithFacebook" finished-at="2025-09-10T11:21:43 TRT" duration-ms="48" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Potentially insecure feature 'adb_shell' has not been enabled. If you want to enable this feature and accept the security ramifications, please do so by following the documented instructions at http://appium.io/docs/en/latest/guides/security/
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [6bab8f6a-4fac-40c3-9988-a9ab90033363, executeScript {script=mobile: shell, args=[{command=pm clear com.mobilatolye.android.enuygun}]}]
+Capabilities {appium:adbExecTimeout: 600000, appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:appWaitActivity: *, appium:appWaitPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 600000, appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., appWaitActivity: *, appWaitPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 16, skipDeviceInitialization: true, skipUnlock: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 120000}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipDeviceInitialization: true, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6bab8f6a-4fac-40c3-9988-a9ab90033363]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Potentially insecure feature 'adb_shell' has not been enabled. If you want to enable this feature and accept the security ramifications, please do so by following the documented instructions at http://appium.io/docs/en/latest/guides/security/
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [6bab8f6a-4fac-40c3-9988-a9ab90033363, executeScript {script=mobile: shell, args=[{command=pm clear com.mobilatolye.android.enuygun}]}]
+Capabilities {appium:adbExecTimeout: 600000, appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:appWaitActivity: *, appium:appWaitPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 600000, appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., appWaitActivity: *, appWaitPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 16, skipDeviceInitialization: true, skipUnlock: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 120000}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipDeviceInitialization: true, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6bab8f6a-4fac-40c3-9988-a9ab90033363
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
+at enuygunautomation.tests.loginpage.LoginScreen.resetAppWithCleanFacebookLogin(LoginScreen.java:26)
+at enuygunautomation.tests.loginpage.LoginScreen.successLoginWithFacebook(LoginScreen.java:281)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successLoginWithFacebook -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:43 TRT" name="tearDown" finished-at="2025-09-10T11:21:44 TRT" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:44 TRT" name="setUpTest" finished-at="2025-09-10T11:21:47 TRT" duration-ms="2819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="emptyEmailAndPasswordWarnings()[pri:11, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:47 TRT" name="emptyEmailAndPasswordWarnings" finished-at="2025-09-10T11:21:55 TRT" duration-ms="8080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyEmailAndPasswordWarnings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:11 TRT" name="tearDown" finished-at="2025-09-05T22:18:12 TRT" duration-ms="830" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:55 TRT" name="tearDown" finished-at="2025-09-10T11:21:55 TRT" duration-ms="533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:12 TRT" name="setUpTest" finished-at="2025-09-05T22:18:18 TRT" duration-ms="6141" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:55 TRT" name="setUpTest" finished-at="2025-09-10T11:21:58 TRT" duration-ms="3138" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="invalidEmailWarningMessage()[pri:12, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:18 TRT" name="invalidEmailWarningMessage" finished-at="2025-09-05T22:18:27 TRT" duration-ms="9140" status="PASS">
+        <test-method signature="invalidEmailWarningMessage()[pri:12, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:21:58 TRT" name="invalidEmailWarningMessage" finished-at="2025-09-10T11:22:07 TRT" duration-ms="8556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailWarningMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:27 TRT" name="tearDown" finished-at="2025-09-05T22:18:28 TRT" duration-ms="559" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:07 TRT" name="tearDown" finished-at="2025-09-10T11:22:07 TRT" duration-ms="366" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:28 TRT" name="setUpTest" finished-at="2025-09-05T22:18:33 TRT" duration-ms="5349" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:07 TRT" name="setUpTest" finished-at="2025-09-10T11:22:10 TRT" duration-ms="2545" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="invalidPasswordWarningMessage()[pri:13, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:33 TRT" name="invalidPasswordWarningMessage" finished-at="2025-09-05T22:18:41 TRT" duration-ms="8504" status="PASS">
+        <test-method signature="invalidPasswordWarningMessage()[pri:13, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:10 TRT" name="invalidPasswordWarningMessage" finished-at="2025-09-10T11:22:18 TRT" duration-ms="8217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidPasswordWarningMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:41 TRT" name="tearDown" finished-at="2025-09-05T22:18:42 TRT" duration-ms="597" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:18 TRT" name="tearDown" finished-at="2025-09-10T11:22:18 TRT" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:42 TRT" name="setUpTest" finished-at="2025-09-05T22:18:48 TRT" duration-ms="5538" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:18 TRT" name="setUpTest" finished-at="2025-09-10T11:22:21 TRT" duration-ms="2484" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="invalidEmailAndPasswordWarnings()[pri:14, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:48 TRT" name="invalidEmailAndPasswordWarnings" finished-at="2025-09-05T22:18:58 TRT" duration-ms="10477" status="PASS">
+        <test-method signature="invalidEmailAndPasswordWarnings()[pri:14, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:21 TRT" name="invalidEmailAndPasswordWarnings" finished-at="2025-09-10T11:22:31 TRT" duration-ms="10336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailAndPasswordWarnings -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:58 TRT" name="tearDown" finished-at="2025-09-05T22:18:59 TRT" duration-ms="698" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:31 TRT" name="tearDown" finished-at="2025-09-10T11:22:32 TRT" duration-ms="334" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:18:59 TRT" name="setUpTest" finished-at="2025-09-05T22:19:04 TRT" duration-ms="5714" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:32 TRT" name="setUpTest" finished-at="2025-09-10T11:22:34 TRT" duration-ms="2561" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="asd()[pri:15, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:19:04 TRT" name="asd" finished-at="2025-09-05T22:19:25 TRT" duration-ms="20143" status="PASS">
+        <test-method signature="asd()[pri:15, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:34 TRT" name="asd" finished-at="2025-09-10T11:22:34 TRT" duration-ms="18" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Potentially insecure feature 'adb_shell' has not been enabled. If you want to enable this feature and accept the security ramifications, please do so by following the documented instructions at http://appium.io/docs/en/latest/guides/security/
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c05b6eec-c262-460c-909d-aaeb57b3469f, executeScript {script=mobile: shell, args=[{command=pm clear com.mobilatolye.android.enuygun}]}]
+Capabilities {appium:adbExecTimeout: 600000, appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:appWaitActivity: *, appium:appWaitPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 600000, appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., appWaitActivity: *, appWaitPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 16, skipDeviceInitialization: true, skipUnlock: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 120000}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipDeviceInitialization: true, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c05b6eec-c262-460c-909d-aaeb57b3469f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Potentially insecure feature 'adb_shell' has not been enabled. If you want to enable this feature and accept the security ramifications, please do so by following the documented instructions at http://appium.io/docs/en/latest/guides/security/
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.6', java.version: '22.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [c05b6eec-c262-460c-909d-aaeb57b3469f, executeScript {script=mobile: shell, args=[{command=pm clear com.mobilatolye.android.enuygun}]}]
+Capabilities {appium:adbExecTimeout: 600000, appium:appActivity: com.mobilatolye.android.enu..., appium:appPackage: com.mobilatolye.android.enu..., appium:appWaitActivity: *, appium:appWaitPackage: com.mobilatolye.android.enu..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 600000, appActivity: com.mobilatolye.android.enu..., appPackage: com.mobilatolye.android.enu..., appWaitActivity: *, appWaitPackage: com.mobilatolye.android.enu..., autoGrantPermissions: true, automationName: UiAutomator2, newCommandTimeout: 300, noReset: false, platformName: ANDROID, platformVersion: 16, skipDeviceInitialization: true, skipUnlock: true, udid: emulator-5554, uiautomator2ServerLaunchTimeout: 120000}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 300, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:skipDeviceInitialization: true, appium:skipUnlock: true, appium:statBarHeight: 83, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:uiautomator2ServerLaunchTimeout: 120000, appium:viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: c05b6eec-c262-460c-909d-aaeb57b3469f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:475)
+at enuygunautomation.tests.loginpage.LoginScreen.resetAppWithCleanFacebookLogin(LoginScreen.java:26)
+at enuygunautomation.tests.loginpage.LoginScreen.asd(LoginScreen.java:532)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:19:25 TRT" name="tearDown" finished-at="2025-09-05T22:19:25 TRT" duration-ms="634" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:34 TRT" name="tearDown" finished-at="2025-09-10T11:22:35 TRT" duration-ms="464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:19:25 TRT" name="setUpTest" finished-at="2025-09-05T22:19:32 TRT" duration-ms="6795" status="PASS">
+        <test-method is-config="true" signature="setUpTest(org.testng.ITestContext)[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:35 TRT" name="setUpTest" finished-at="2025-09-10T11:22:39 TRT" duration-ms="3620" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2c668c2a]]>
+                <![CDATA[org.testng.TestRunner@6afeaf2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method signature="successLoginWithGoogle()[pri:16, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:19:32 TRT" name="successLoginWithGoogle" finished-at="2025-09-05T22:19:50 TRT" duration-ms="18047" status="PASS">
+        <test-method signature="successLoginWithGoogle()[pri:16, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:39 TRT" name="successLoginWithGoogle" finished-at="2025-09-10T11:22:53 TRT" duration-ms="14344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successLoginWithGoogle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@119f1f2a]" started-at="2025-09-05T22:19:50 TRT" name="tearDown" finished-at="2025-09-05T22:19:51 TRT" duration-ms="1046" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:enuygunautomation.tests.loginpage.LoginScreen@1a1da881]" started-at="2025-09-10T11:22:53 TRT" name="tearDown" finished-at="2025-09-10T11:22:53 TRT" duration-ms="474" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
